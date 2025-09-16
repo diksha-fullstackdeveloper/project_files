@@ -17,6 +17,7 @@
             background-color: antiquewhite;
             display: flex;
             flex-direction: column;
+            border-style: dotted;
         }
 
         .top-container {
@@ -38,7 +39,7 @@
         .left-container {
             height: 300px;
             width: 200px;
-            background-color: bisque;
+            background-color: chartreuse;
             display: flex;
             flex-direction: column;
         }
@@ -53,8 +54,9 @@
 
         .righttop-container {
             height: 100px;
-            width: 300px;
+            width: 400px;
             background-color: burlywood;
+            display: flex;
             flex-direction: row;
 
         }
@@ -70,9 +72,10 @@
 
         .rightbottom-container {
             height: 100px;
-            width: 300px;
+            width: 400px;
             background-color: blue;
             display: flex;
+            flex-direction: row;
         }
 
         .bottom-container {
@@ -109,12 +112,17 @@
 
         }
 
-        .rightstraight-container {
-            height: 200px;
+        .toptwo-container {
+            height: 100px;
             width: 100px;
             background-color: chocolate;
-            display: flex;
-            flex-direction: column;
+
+        }
+
+        .rightbottomone-container {
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
         }
     </style>
     <title>layout 2</title>
@@ -130,17 +138,18 @@
 
                 <div class="righttop-container">
                     <div class="topone-container"></div>
+                    <div class="toptwo-container"></div>
                 </div>
-                <div class="rightbottom-container"></div>
+                <div class="rightbottom-container">
+                    <div class="rightbottomone-container"></div>
+                </div>
                 <div class="bottom-container">
                     <div class="bottomone-container"></div>
                     <div class="bottomtwo-container"></div>
                     <div class="bottomthree-container"></div>
                     <div class="bottomfour-container"></div>
                 </div>
-                <div class="rightstraight-container">
-                    <div class="straightone-container"></div>
-                </div>
+
             </div>
         </div>
 
