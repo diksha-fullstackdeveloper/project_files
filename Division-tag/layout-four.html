@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>layout5</title>
+     <style>
+        /* declrearation */
+        body{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        /* main container */
+        .main-container{
+            height: 100vh;
+            width: 100vw;
+            background-color:orange;
+            display: flex;
+            flex-direction: column;
+        }
+        /* main container child */
+        .upper-box{
+            height: 20%;
+            width: 100%;
+            background-color:red;
+        }
+        .lower-box{
+            height: 80%;
+            width: 100%;
+            background-color: aquamarine;
+            display: flex;
+        }
+        /* lower box childs */
+        .lower-left{
+            height:100%;
+            width: 20%;
+            background-color: gray;
+        }
+        .lower-right{
+            height: 100%;
+            width: 80%;
+            background-color: brown;
+            display: flex;
+            flex-direction: column;
+        }
+        /* lower right childs */
+        .lower-right-top{
+            height: 33.3%;
+            width: 100%;
+            background-color: aqua;
+            display: flex;
+        }
+        .lower-right-middle{
+            height: 33.2%;
+            width: 100%;
+            background-color: chartreuse;
+            display: flex;
+
+        }
+        .lower-right-bottom{
+            height: 33.2%;
+            width: 100%;
+            background-color: chocolate;
+            display: flex;
+        }
+        /* lower right top childs */
+        .lower-right-top-one{
+            height: 100%;
+            width: 33.3%;
+            background-color: blue;
+        }
+        .lower-right-top-two{
+            height: 100%;
+            width: 33.3%;
+            background-color: coral;
+        }
+        .lower-right-top-three{
+            height: 100%;
+            width: 33.3%;
+            background-color: bisque;
+        }
+        /* lower right middle childs */
+        .lower-right-middle-one{
+            height:100%;
+            width: 66.5%;
+            background-color: lightcoral;
+        }
+        .lower-right-middle-two{
+            height: 100%;
+            width: 33.5%;
+            background-color: burlywood;
+        }
+        /* lower right bottom childs */
+        .bottom-ainner-boxes{
+            height: 100%;
+            width:25%;
+            background-color: goldenrod;
+        }
+        .bottom-binner-boxes{
+            height: 100%;
+            width: 25%;
+            background-color: brown;
+        }
+        .bottom-cinner-boxes{
+            height: 100%;
+            width: 25%;
+            background-color: aqua;
+        }
+        .bottom-dinner-boxes{
+            height: 100%;
+            width: 25%;
+            background-color: cornflowerblue;
+        }
+
+
+     </style>
+</head>
+<body>
+    <!-- division tag -->
+    <div class="main-container">
+        <!-- main container child -->
+        <div class="upper-box"></div>
+        <div class="lower-box">
+            <!-- lower-box-childs -->
+             <div class="lower-left"></div>
+             <!-- lower right parent -->
+             <div class="lower-right">
+                <!-- lower right childs -->
+              <div class="lower-right-top">
+                <!-- lower right top child -->
+                 <div class="lower-right-top-one"></div>
+                 <div class="lower-right-top-two"></div>
+                 <div class="lower-right-top-three"></div>
+              </div>
+              <!-- lower right middle parent-->
+              <div class="lower-right-middle">
+                <!-- lower right middle childs -->
+                <div class="lower-right-middle-one"></div>
+                <div class="lower-right-middle-two"></div>
+                <div class="lower-right-middle-three"></div>
+
+              </div>
+              <!-- lower right bottom parent -->
+              <div class="lower-right-bottom">
+              <!-- lower right bottom childs -->
+               <div class="bottom-ainner-boxes"></div>
+               <div class="bottom-binner-boxes"></div>
+               <div class="bottom-cinner-boxes"></div>
+               <div class="bottom-dinner-boxes"></div>
+               </div>
+
+             </div>
+        </div>
+    </div>
+    
+</body>
+</html>

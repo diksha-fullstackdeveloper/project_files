@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>layout 5</title>
+    <style>
+        /* declaration */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* main container */
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            display: flex;
+        }
+
+        /* main container child */
+        .left-section {
+            height: 100%;
+            width: 50%;
+            background-color: aqua;
+        }
+
+        .right-section {
+            height: 100%;
+            width: 50%;
+            background-color: blanchedalmond;
+        }
+
+        /* left section */
+        .top-section {
+            height: 20%;
+            width: 100%;
+            background-color: blue;
+            display: flex;
+        }
+
+        .bottom-section {
+            height: 80%;
+            width: 100%;
+            background-color: burlywood;
+            display: flex;
+
+        }
+
+        /* top section child */
+        .top-one {
+            height: 100%;
+            width: 45%;
+            background-color: cadetblue;
+        }
+
+        .top-two {
+            height: 100%;
+            width: 10%;
+            background-color: blueviolet;
+        }
+
+        .top-three {
+            height: 100%;
+            width: 45%;
+            background-color: chartreuse;
+        }
+
+        /* bottom section childs */
+        .one-box {
+            height: 100%;
+            width: 20%;
+            background-color: black;
+        }
+
+        .two-box {
+            height: 100%;
+            width: 60%;
+            background-color: darkgreen;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .three-box {
+            height: 100%;
+            width: 20%;
+            background-color: cadetblue;
+            display: flex;
+        }
+
+        /* two box childs */
+        .top-box {
+            height: 10%;
+            width: 100%;
+            background-color: cornflowerblue;
+        }
+
+        .middle-box {
+            height: 45%;
+            width: 100%;
+            background-color: chocolate;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        .bottom-box {
+            height: 45%;
+            width: 100%;
+            background-color: lightcoral;
+            display: flex;
+        }
+
+        /* middle box child */
+        .middle-section {
+            height: 50%;
+            width: 40%;
+            background-color: rgb(136, 21, 59);
+
+        }
+
+        /* bottom box child */
+        .first-box {
+            height: 100%;
+            width: 20%;
+            background-color: grey;
+        }
+
+        .second-box {
+            height: 100%;
+            width: 80%;
+            background-color: crimson;
+            display: flex;
+            flex-direction: column;
+        }
+        /* second box child */
+        .first-top{
+            height: 60%;
+            width: 100%;
+            background-color: blueviolet;
+        }
+        .second-top{
+            height: 40%;
+            width: 100%;
+            background-color: chartreuse;
+        }
+        /* right section  */
+        .upper-box{
+            height: 20%;
+            width: 100%;
+            background-color: blue;
+        }
+        .mid-box{
+            height: 40%;
+            width: 100%;
+            background-color: brown;
+        }
+        .down-box{
+            height: 40%;
+            width: 100%;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- division tag -->
+    <div class="main-container">
+        <!-- main container child -->
+        <div class="left-section">
+            <!-- parent left section -->
+            <div class="top-section">
+                <!-- top section child -->
+                <div class="top-one"></div>
+                <div class="top-two"></div>
+                <div class="top-three"></div>
+            </div>
+            <div class="bottom-section">
+                <!-- bottom section childs -->
+                <div class="one-box"></div>
+                <div class="two-box">
+                    <!-- two box childs -->
+                    <div class="top-box"></div>
+                    <div class="middle-box">
+                        <div class="middle-section"></div>
+                    </div>
+                    <div class="bottom-box">
+                        <!-- bottom box childs -->
+                        <div class="first-box"></div>
+                        <div class="second-box">
+                            <!-- second box child -->
+                            <div class="first-top"></div>
+                            <div class="second-top"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="three-box"></div>
+            </div>
+        </div>
+        <div class="right-section">
+            <!-- right section childs -->
+             <div class="upper-box"></div>
+             <div class="mid-box"></div>
+             <div class="down-box"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
