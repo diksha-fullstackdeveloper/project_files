@@ -1,133 +1,156 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
+     <title>layout5</title>
+     <style>
+        /* declrearation */
+        body{
             margin: 0;
-            padding: 0;
+            padding: 0%;
+            box-sizing: border-box;
         }
-
         /* main container */
-        .main-container {
+        .main-container{
             height: 100vh;
             width: 100vw;
-            border-style: solid;
+            background-color:orange;
+            display: flex;
+            flex-direction: column;
         }
-
-        /* top section */
-        .top-section {
+        /* main container child */
+        .upper-box{
             height: 20%;
             width: 100%;
-            border-style: solid;
-            display: flex;
+            background-color:red;
         }
-
-        /* top boxes css */
-        .top-boxes {
-            height: 100%;
-            width: 20%;
-            border-style: solid;
-        }
-
-        /* bottom section */
-        .bottom-section {
+        .lower-box{
             height: 80%;
             width: 100%;
-            border-style: solid;
+            background-color: aquamarine;
             display: flex;
-
         }
-
-        /* left section */
-        .left-section {
-            height: 100%;
+        /* lower box childs */
+        .lower-left{
+            height:100%;
             width: 20%;
-            border-style: solid;
+            background-color: gray;
         }
-
-        /* right section */
-        .right-section {
+        .lower-right{
             height: 100%;
             width: 80%;
-            border-style: solid;
+            background-color: brown;
+            display: flex;
+            flex-direction: column;
         }
-
-        /* right-top */
-        .right-top {
-            height: 20%;
+        /* lower right childs */
+        .lower-right-top{
+            height: 33.3%;
             width: 100%;
-            border-style: solid;
+            background-color: aqua;
             display: flex;
         }
-
-        /* right-top-inner */
-        .right-top-inner {
-            height: 100%;
-            width: 33%;
-            border-style: solid;
-        }
-
-        /* right bottom */
-        .right-bottom {
-            height: 80%;
+        .lower-right-middle{
+            height: 33.2%;
             width: 100%;
-            border-style: solid;
+            background-color: chartreuse;
+            display: flex;
+
+        }
+        .lower-right-bottom{
+            height: 33.2%;
+            width: 100%;
+            background-color: chocolate;
             display: flex;
         }
-        /* left-box */
-        .left-box{
+        /* lower right top childs */
+        .lower-right-top-one{
             height: 100%;
-            width: 20%;
-            border-style: solid;
+            width: 33.3%;
+            background-color: blue;
         }
-        /* right box */
-        .right-box{
+        .lower-right-top-two{
             height: 100%;
-            width: 80%;
-            border-style: solid;
+            width: 33.3%;
+            background-color: coral;
         }
-    </style>
+        .lower-right-top-three{
+            height: 100%;
+            width: 33.3%;
+            background-color: bisque;
+        }
+        /* lower right middle childs */
+        .lower-right-middle-one{
+            height:100%;
+            width: 66.5%;
+            background-color: lightcoral;
+        }
+        .lower-right-middle-two{
+            height: 100%;
+            width: 33.5%;
+            background-color: burlywood;
+        }
+        /* lower right bottom childs */
+        .bottom-ainner-boxes{
+            height: 100%;
+            width:25%;
+            background-color: goldenrod;
+        }
+        .bottom-binner-boxes{
+            height: 100%;
+            width: 25%;
+            background-color: brown;
+        }
+        .bottom-cinner-boxes{
+            height: 100%;
+            width: 25%;
+            background-color: aqua;
+        }
+        .bottom-dinner-boxes{
+            height: 100%;
+            width: 25%;
+            background-color: cornflowerblue;
+        }
+
+
+     </style>
 </head>
-
 <body>
+    <!-- division tag -->
     <div class="main-container">
-        <!-- top section -->
-        <div class="top-section">
-            <!-- inner boxes -->
-            <div class="top-boxes"></div>
-            <div class="top-boxes"></div>
-            <div class="top-boxes"></div>
-            <div class="top-boxes"></div>
-            <div class="top-boxes"></div>
-        </div>
-        <!-- bottom section -->
-        <div class="bottom-section">
-            <!-- left section -->
-            <div class="left-section"></div>
-            <!-- right section -->
-            <div class="right-section">
-                <!-- right top -->
-                <div class="right-top">
-                    <!-- right top inner -->
-                    <div class="right-top-inner"></div>
-                    <div class="right-top-inner"></div>
-                    <div class="right-top-inner"></div>
-                </div>
-                <!-- right bottom -->
-                <div class="right-bottom">
-                    <!-- left box -->
-                    <div class="left-box"></div>
-                    <!-- right box -->
-                    <div class="right-box"></div>
-                </div>
-            </div>
+        <!-- main container child -->
+        <div class="upper-box"></div>
+        <div class="lower-box">
+            <!-- lower-box-childs -->
+             <div class="lower-left"></div>
+             <!-- lower right parent -->
+             <div class="lower-right">
+                <!-- lower right childs -->
+              <div class="lower-right-top">
+                <!-- lower right top child -->
+                 <div class="lower-right-top-one"></div>
+                 <div class="lower-right-top-two"></div>
+                 <div class="lower-right-top-three"></div>
+              </div>
+              <!-- lower right middle parent-->
+              <div class="lower-right-middle">
+                <!-- lower right middle childs -->
+                <div class="lower-right-middle-one"></div>
+                <div class="lower-right-middle-two"></div>
+                <div class="lower-right-middle-three"></div>
+
+              </div>
+              <!-- lower right bottom parent -->
+              <div class="lower-right-bottom">
+              <!-- lower right bottom childs -->
+               <div class="bottom-ainner-boxes"></div>
+               <div class="bottom-binner-boxes"></div>
+               <div class="bottom-cinner-boxes"></div>
+               <div class="bottom-dinner-boxes"></div>
+               </div>
+
+             </div>
         </div>
     </div>
+    
 </body>
-
 </html>

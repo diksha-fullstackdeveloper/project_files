@@ -3,7 +3,6 @@
 
 <head>
     <style>
-        /* tag selector */
         body {
             margin: 0;
             padding: 0;
@@ -17,144 +16,173 @@
             background-color: antiquewhite;
             display: flex;
             flex-direction: column;
-            border-style: dotted;
         }
 
-        .top-container {
+        /* one container */
+        .one-container {
             height: 100px;
             width: 600px;
-            background-color: aqua;
+            background-color: aquamarine;
             display: flex;
             flex-direction: row;
         }
 
-        .first-container {
-            height: 300px;
-            width: 600px;
-            background-color: black;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .left-container {
-            height: 300px;
+        /* one container child */
+        .one-box {
+            height: 100px;
             width: 200px;
-            background-color: chartreuse;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .right-container {
-            height: 300px;
-            width: 400px;
-            background-color: blue;
-            display: flex;
-            flex-direction: row;
-        }
-
-        .righttop-container {
-            height: 100px;
-            width: 400px;
-            background-color: burlywood;
-            display: flex;
-            flex-direction: row;
-
-        }
-
-        .topone-container {
-            height: 100px;
-            width: 150px;
-            background-color: brown;
-
-
-
-        }
-
-        .rightbottom-container {
-            height: 100px;
-            width: 400px;
-            background-color: blue;
-            display: flex;
-            flex-direction: row;
-        }
-
-        .bottom-container {
-            height: 100px;
-            width: 400px;
             background-color: aqua;
-            display: flex;
-            flex-direction: row;
 
         }
 
-        .bottomone-container {
+        .onefirst-box {
             height: 100px;
             width: 100px;
+            background-color: black;
+        }
+
+        .two-box {
+            height: 100px;
+            width: 200px;
+            background-color: blue;
+        }
+
+        .three-box {
+            height: 100px;
+            width: 200px;
+            background-color: brown;
+        }
+         /* two container */
+        .two-container {
+            height: 100px;
+            width: 600px;
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: row;
+
+        }
+        /* two box childs */
+        .first-box{
+            height: 100px;
+            width: 200px;
             background-color: cadetblue;
         }
-
-        .bottomtwo-container {
+        .second-box{
             height: 100px;
-            width: 100px;
-            background-color: brown;
+            width: 200px;
+            background-color: orangered;
         }
-
-        .bottomthreee-container {
+        .third-box{
             height: 100px;
-            width: 100px;
-            background-color: antiquewhite;
+            width: 200px;
+            background-color: gray;
         }
-
-        .bottomfour-container {
+        .secondtwo-box{
             height: 100px;
             width: 100px;
+            background-color: black;
+        }
+        /* three container */
+        .three-container{
+            height: 100px;
+            width: 600px;
+            background-color: purple;
+            display: flex;
+            flex-direction: row;
+
+        }
+        /* three container childs */
+        .tone-box{
+            height: 100px;
+            width: 200px;
             background-color: chartreuse;
-
         }
-
-        .toptwo-container {
+        .ttwo-box{
+            height: 100px;
+            width: 200px;
+            background-color: lightcoral;
+        }
+        .tthree-box{
+            height: 100px;
+            width: 200px;
+            background-color: lightseagreen;
+        }
+        .ttone-box{
             height: 100px;
             width: 100px;
-            background-color: chocolate;
-
+            background-color: lightslategray;
         }
-
-        .rightbottomone-container {
+        /* four container */
+        .four-container{
+            height: 100px;
+            width: 600px;
+            background-color: lightblue;
+            display: flex;
+        }
+        /* foue container child */
+        .fone-box{
+            height: 100px;
+            width: 200px; 
+            display: flex;
+        }
+        .ffirst-box{
             height: 100px;
             width: 100px;
-            background-color: blueviolet;
+            background-color: orange;
         }
+        .ftwo-box{
+            height: 100px;
+            width: 200px;
+            background-color:red;
+        }
+        .fthree-box{
+            height: 100px;
+            width: 200px;
+            background-color: green;
+        }
+        
     </style>
-    <title>layout 2</title>
+
+    <title>Layout3</title>
 </head>
 
 <body>
     <!-- division tag -->
-    <div class="main container">
-        <div class="top-container"></div>
-        <div class="first-container">
-            <div class="left-container"></div>
-            <div class="Right-container">
-
-                <div class="righttop-container">
-                    <div class="topone-container"></div>
-                    <div class="toptwo-container"></div>
-                </div>
-                <div class="rightbottom-container">
-                    <div class="rightbottomone-container"></div>
-                </div>
-                <div class="bottom-container">
-                    <div class="bottomone-container"></div>
-                    <div class="bottomtwo-container"></div>
-                    <div class="bottomthree-container"></div>
-                    <div class="bottomfour-container"></div>
-                </div>
-
+    <!-- main container -->
+    <div class="main-container">
+        <!-- one container -->
+        <div class="one-container">
+            <div class="one-box">
+                <div class="onefirst-box"></div>
+            </div>
+            <div class="two-box"></div>
+            <div class="three-box"></div>
+        </div>
+        <!-- two container -->
+        <div class="two-container">
+            <div class="first-box"></div>
+            <div class="second-box">
+                <div class="secondtwo-box"></div>
+            </div>
+            <div class="third-box"></div>
+        </div>
+        <!-- three container -->
+        <div class="three-container">
+            <div class="tone-box"></div>
+            <div class="ttwo-box"></div>
+            <div class="tthree-box">
+                <div class="ttone-box"></div>
             </div>
         </div>
-
+        <!-- four container -->
+        <div class="four-container">
+            <div class="fone-box">
+                <div class="ffirst-box"></div>
+            </div>
+            <div class="ftwo-box"></div>
+            <div class="fthree-box"></div>
+        </div>
     </div>
-
 </body>
 
 </html>
