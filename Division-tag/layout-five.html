@@ -148,9 +148,10 @@
         }
         /* right section  */
         .upper-box{
-            height: 20%;
+            height: 30%;
             width: 100%;
             background-color: blue;
+            display: flex;
         }
         .mid-box{
             height: 40%;
@@ -158,10 +159,110 @@
             background-color: brown;
         }
         .down-box{
-            height: 40%;
+            height: 30%;
             width: 100%;
             background-color: chocolate;
+            display: flex;
         }
+        /* right section upper box child */
+        .upper-one{
+            height: 100%;
+            width: 25%;
+            background-color: darkgrey;
+        }
+        .upper-two{
+            height: 100%;
+            width: 75%;
+            background-color: rgb(2, 29, 30);
+        }
+        /* mid box childs */
+        .row-one{
+            height: 50%;
+            width: 100%;
+            background-color: blue;
+            display: flex;
+        }
+        .row-two{
+            height: 50%;
+            width: 100%;
+            background-color:lightseagreen;
+            display: flex;
+        }
+        /* row one childs */
+        .inner-one{
+            height: 100%;
+            width: 50%;
+            background-color: darkorchid;
+        }
+        .inner-two{
+            height: 100%;
+            width: 50%;
+            background-color: darkolivegreen;
+        }
+        /* row two childs */
+        .down-one{
+            height: 100%;
+            width: 50%;
+            background-color: lightsalmon;
+        }
+        .down-two{
+            height: 100%;
+            width: 50%;
+            background-color: lightcoral;
+        }
+        /* down box childs */
+        .downbox-one{
+            height: 100%;
+            width: 40%;
+            background-color: lightseagreen;
+        }
+        .downbox-two{
+            height: 100%;
+            width: 60%;
+            background-color: lime;
+        }
+        /* downbox one child */
+        .first-one{
+            height: 80%;
+            width: 40%;
+            background-color: black;
+        }
+        /* down box two child */
+        .one-row{
+            height: 70%;
+            width: 100%;
+            background-color: aqua;
+            display: flex;
+        }
+        .two-row{
+            height: 30%;
+            width: 100%;
+            background-color: blue;
+            display: flex;
+        }
+        /* one row childs */
+        .inner-onerow{
+            height: 100%;
+            width: 40%;
+            background-color: lightslategrey;
+        }
+        .inner-tworow{
+            height: 100%;
+            width: 60%;
+            background-color: brown;
+        }
+        /* row two child */
+        .under-one{
+            height: 100%;
+            width: 40%;
+            background-color: rgb(17, 17, 36);
+        }
+        .under-two{
+            height: 100%;
+            width: 60%;
+            background-color: palevioletred;
+        }
+        
     </style>
 </head>
 
@@ -201,9 +302,44 @@
         </div>
         <div class="right-section">
             <!-- right section childs -->
-             <div class="upper-box"></div>
-             <div class="mid-box"></div>
-             <div class="down-box"></div>
+             <div class="upper-box">
+                <div class="upper-one"></div>
+                <div class="upper-two"></div>
+             </div>
+             <div class="mid-box">
+            <!-- mid box childs -->
+             <div class="row-one">
+                <!-- row one childs -->
+                 <div class="inner-one"></div>
+                 <div class="inner-two"></div>
+             </div>
+             <div class="row-two">
+                <!-- row two childs -->
+                 <div class="down-one"></div>
+                 <div class="down-two"></div>
+             </div>
+             </div>
+             <div class="down-box">
+                <!-- down box childs -->
+                 <div class="downbox-one">
+                    <!-- down box one child -->
+                     <div class="first-one"></div>
+                 </div>
+                 <div class="downbox-two">
+                    <!-- downbox two childs -->
+                     <div class="one-row">
+                        <!-- one row child -->
+                         <div class="inner-onerow"></div>
+                         <div class="inner-tworow"></div>
+
+                     </div>
+                     <div class="two-row">
+                        <!-- two row child -->
+                         <div class="under-one"></div>
+                         <div class="under-two"></div>
+                     </div>
+                 </div>
+             </div>
         </div>
     </div>
 
