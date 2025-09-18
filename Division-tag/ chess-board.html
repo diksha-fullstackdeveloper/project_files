@@ -4,21 +4,23 @@
 <head>
     <style>
         body {
-            margin: 0%;
-            padding: 0%;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
+
         }
 
         /* tag selectors */
         .main-container {
             height: 800px;
             width: 800px;
-            background-color: aqua;
-            border-style: double;
+            background-color: black;
+            border-style: groove;
             display: flex;
             flex-direction: column;
+            margin: 22.5%;
         }
-        
+
 
         /* row one */
         .row-one {
@@ -26,7 +28,7 @@
             width: 800px;
             background-color: blue;
             display: flex;
-            
+
         }
 
         /* main container childs */
@@ -41,136 +43,445 @@
             width: 100px;
             background-color: white;
         }
-        .box-three{
+
+        .box-three {
             height: 100px;
             width: 100px;
             background-color: black;
         }
-        .box-four{
+
+        .box-four {
             height: 100px;
             width: 100px;
             background-color: white;
         }
-        .box-five{
+
+        .box-five {
             height: 100px;
             width: 100px;
             background-color: black;
         }
-        .box-six{
+
+        .box-six {
             height: 100px;
             width: 100px;
             background-color: white;
         }
-        .box-seven{
+
+        .box-seven {
             height: 100px;
             width: 100px;
             background-color: black;
         }
-        .box-eight{
+
+        .box-eight {
             height: 100px;
             width: 100px;
             background-color: white;
         }
+
         /* row two */
-        .row-two{
+        .row-two {
             height: 100px;
             width: 800px;
             background-color: antiquewhite;
             display: flex;
             flex-direction: row;
         }
+
         .box-1one {
             height: 100px;
             width: 100px;
-            background-color:white;
+            background-color: white;
         }
 
         .box-2two {
             height: 100px;
             width: 100px;
-            background-color:black;
+            background-color: black;
         }
-        .box-3three{
+
+        .box-3three {
             height: 100px;
             width: 100px;
-            background-color:white;
+            background-color: white;
         }
-        .box-4four{
+
+        .box-4four {
             height: 100px;
             width: 100px;
-            background-color:black;
+            background-color: black;
         }
-        .box-5five{
+
+        .box-5five {
             height: 100px;
             width: 100px;
-            background-color:white;
+            background-color: white;
         }
-        .box-6six{
+
+        .box-6six {
             height: 100px;
             width: 100px;
-            background-color:black;
+            background-color: black;
         }
-        .box-7seven{
+
+        .box-7seven {
             height: 100px;
             width: 100px;
-            background-color:white;
+            background-color: white;
         }
-        .box-8eight{
+
+        .box-8eight {
             height: 100px;
             width: 100px;
-            background-color:black;
+            background-color: black;
         }
+
         /* row three */
-        .row-three{
+        .row-three {
             height: 100px;
             width: 800px;
             background-color: blue;
             display: flex;
         }
+
         .box-one1 {
             height: 100px;
             width: 100px;
-            background-color:black;
+            background-color: black;
         }
 
         .box-two2 {
             height: 100px;
             width: 100px;
-            background-color:white;
-        }
-        .box-three3{
-            height: 100px;
-            width: 100px;
-            background-color:black;
-        }
-        .box-four4{
-            height: 100px;
-            width: 100px;
-            background-color:white;
-        }
-        .box-five5{
-            height: 100px;
-            width: 100px;
-            background-color:black;
-        }
-        .box-six6{
-            height: 100px;
-            width: 100px;
-            background-color:white;
-        }
-        .box-seven7{
-            height: 100px;
-            width: 100px;
-            background-color:black;
-        }
-        .box-eight8{
-            height: 100px;
-            width: 100px;
-            background-color:white;
+            background-color: white;
         }
 
-        
+        .box-three3 {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
 
+        .box-four4 {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-five5 {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-six6 {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-seven7 {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-eight8 {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        /* row four */
+        .row-four {
+            height: 100px;
+            width: 800px;
+            background-color: azure;
+            display: flex;
+        }
+
+        .box-one-1 {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-two2-2 {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-three3-3 {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-four4-4 {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-five5-5 {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-six6-6 {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-seven7-7 {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-eight8-8 {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        /* row five */
+        .row-five {
+            height: 100px;
+            width: 800px;
+            background-color: bisque;
+            display: flex;
+        }
+
+        .box-one-five {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-two-five {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-three-five {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-four-five {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-five-five {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-six-five {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-seven-five {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-eight-five {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        /* row six */
+        .row-six {
+            height: 100px;
+            width: 800px;
+            background-color: aliceblue;
+            display: flex;
+        }
+
+        .box-one-six {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-two-six {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-three-six {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-four-six {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-five-six {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-six-six {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-seven-six {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-eight-six {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        /* row seven */
+        .row-seven {
+            height: 100px;
+            width: 800px;
+            background-color: bisque;
+            display: flex;
+        }
+
+        .row-one {
+            height: 100px;
+            width: 800px;
+            background-color: blue;
+
+
+        }
+
+
+        .box-one-seven {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-two-seven {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-three-seven {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-four-seven {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-five-seven {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-six-seven {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-seven-seven {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-eight-seven {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        /* row eight */
+        .row-eight {
+            height: 100px;
+            width: 800px;
+            background-color: aquamarine;
+            display: flex;
+        }
+
+
+        .box-one-eight {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-two-eight {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-three-eight {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-four-eight {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-five-eight {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-six-eight {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .box-seven-eight {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .box-eight-eight {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
     </style>
     <title>Chess Board</title>
 </head>
@@ -178,26 +489,62 @@
 <body>
     <!-- division tag -->
     <div class="main-container">
+        <!-- row one -->
         <div class="row-one">
-            <div class="box-one"></div>
-            <div class="box-two"></div>
-            <div class="box-three"></div>
-            <div class="box-four"></div>
-            <div class="box-five"></div>
-            <div class="box-six"></div>
-            <div class="box-seven"></div>
-            <div class="box-eight"></div>
+            <div class="box-one">
+                <img src="./Assets/images/elephant.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-two">
+                <img src="./Assets/images/horse.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-three">
+                <img src="./Assets/images/vagir.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-four">
+                <img src="./Assets/images/queen.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-five">
+                <img src="./Assets/images/king.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-six">
+                <img src="./Assets/images/vagir.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-seven">
+                <img src="./Assets/images/horse.png" height="100%" width="100%" alt="">
+
+            </div>
+            <div class="box-eight">
+                <img src="./Assets/images/elephant.png" height="100%" width="100%" alt="">
+            </div>
         </div>
+        <!-- row two -->
         <div class="row-two">
-            <div class="box-1one"></div>
-            <div class="box-2two"></div>
-            <div class="box-3three"></div>
-            <div class="box-4four"></div>
-            <div class="box-5five"></div>
-            <div class="box-6six"></div>
-            <div class="box-7seven"></div>
-            <div class="box-8eight"></div>
+            <div class="box-1one">
+                <img src="./Assets/images/key-one.png" alt="" height="100%" width="100%">
+            </div>
+            <div class="box-2two">
+                <img src="./Assets/images/key-one.png" alt="" height="100%" width="100%">
+            </div>
+            <div class="box-3three">
+                <img src="./Assets/images/key-one.png" alt="" height="100%" width="100%">
+            </div>
+            <div class="box-4four">
+                <img src="./Assets/images/key-one.png" alt="" height="100%" width="100%">
+            </div>
+            <div class="box-5five">
+                <img src="./Assets/images/key-one.png" alt="" height="100%" width="100%">
+            </div>
+            <div class="box-6six">
+                <img src="./Assets/images/key-one.png" alt="" height="100%" width="100%">
+            </div>
+            <div class="box-7seven">
+                <img src="./Assets/images/key-one.png" alt="" height="100%" width="100%">
+            </div>
+            <div class="box-8eight">
+                <img src="./Assets/images/key-one.png" alt="" height="100%" width="100%">
+            </div>
         </div>
+        <!-- row three -->
         <div class="row-three">
             <div class="box-one1"></div>
             <div class="box-two2"></div>
@@ -207,6 +554,94 @@
             <div class="box-six6"></div>
             <div class="box-seven7"></div>
             <div class="box-eight8"></div>
+        </div>
+        <!-- row four -->
+        <div class="row-four">
+            <div class="box-one-1"></div>
+            <div class="box-two2-2"></div>
+            <div class="box-three3-3"></div>
+            <div class="box-four4-4"></div>
+            <div class="box-five5-5"></div>
+            <div class="box-six6-6"></div>
+            <div class="box-seven7-7"></div>
+            <div class="box-eight8-8"></div>
+        </div>
+        <!-- row five -->
+        <div class="row-five">
+            <div class="box-one-five"></div>
+            <div class="box-two-five"></div>
+            <div class="box-three-five"></div>
+            <div class="box-four-five"></div>
+            <div class="box-five-five"></div>
+            <div class="box-six-five"></div>
+            <div class="box-seven-five"></div>
+            <div class="box-eight-five"></div>
+        </div>
+        <!-- row six -->
+        <div class="row-six">
+            <div class="box-one-six"></div>
+            <div class="box-two-six"></div>
+            <div class="box-three-six"></div>
+            <div class="box-four-six"></div>
+            <div class="box-five-six"></div>
+            <div class="box-six-six"></div>
+            <div class="box-seven-six"></div>
+            <div class="box-eight-six"></div>
+        </div>
+        <!-- row seven -->
+        <div class="row-seven">
+            <div class="box-one-seven">
+                <img src="./Assets/images/main-key.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-two-seven">
+                <img src="./Assets/images/main-key.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-three-seven">
+                <img src="./Assets/images/main-key.png" height="100%" width="100%" alt="">
+            </div>
+
+            <div class="box-four-seven">
+                <img src="./Assets/images/main-key.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-five-seven">
+                <img src="./Assets/images/main-key.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-six-seven">
+                <img src="./Assets/images/main-key.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-seven-seven">
+                <img src="./Assets/images/main-key.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-eight-seven">
+                <img src="./Assets/images/main-key.png" height="100%" width="100%" alt="">
+            </div>
+        </div>
+        <!-- row eight -->
+        <div class="row-eight">
+            <div class="box-one-eight">
+                <img src="./Assets/images/hathi.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-two-eight">
+                <img src="./Assets/images/ghoda.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-three-eight">
+                <img src="./Assets/images/chess-key.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-four-eight">
+                <img src="./Assets/images/rani.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-five-eight">
+                <img src="./Assets/images/raja.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-six-eight">
+                <img src="./Assets/images/chess-key.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-seven-eight">
+                <img src="./Assets/images/ghoda.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="box-eight-eight">
+                <img src="./Assets/images/hathi.png" height="100%" width="100%" alt="">
+            </div>
         </div>
     </div>
 
