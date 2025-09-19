@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+
+}
+/* header css start--------- */
+
+/* tag selecter */
+header {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 25px;
+}
+/* header css end--------- */
+.main{
+    width: 100%;
+    height: auto;
+}
+/* header css start------ */
+.home{
+    width: 100%;
+    height: 800px;
+    background-color: #E5BEB5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home-contant{
+    width: 50%;
+    height: 30%;
+    background-color:#D9E9CF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home ,h1{
+    margin: 0;
+    padding: 0;
+}
+/* home section css end----- */
+
+
+/* about section css start----- */
+.about{
+    width: 100%;
+    height: 800px;
+    background-color: cornflowerblue;
+}
+.about-title{
+    width: 100%;
+    height: 10%;
+    background-color: cyan;
+    text-align: center;
+    padding-top:20px ;
+}
+
+/* about section css end------- */
+
+
+/* project section css start---- */
+
+.project{
+    height: 800px;
+    width: 100%;
+    background-color: #A3CCDA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.project-title{
+    width: 100%;
+    height: 10%;
+    background-color: cyan;
+    text-align: center;
+    padding-top:20px ;
+}
+.project-cards{
+    width: 80%;
+    height: 80%;
+    background-color: chocolate;
+    display: flex;
+    justify-content: space-around;
+     align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    
+}
+.cards{
+    width: 20%;
+    height: 200px;
+    background-color: #E5BEB5;
+    border-radius: 10px;
+}
+/* project section css end----- */
+
+
+/* contact section css start----- */
+.contact{
+    height: 800px;
+    width: 100%;
+    background-color: #26667F;
+}
+.contact-title{
+    width: 100%;
+    height: 10%;
+    background-color: cyan;
+    text-align: center;
+    padding-top:20px ;
+}
+
+/* contact section css end------ */
