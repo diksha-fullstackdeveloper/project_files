@@ -9,12 +9,13 @@ body {
 
 /* tag selecter */
 header {
-    height: 100%;
+    height: 60px;
     width: 100%;
     background-color: aqua;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
 }
 
 ul {
@@ -59,6 +60,10 @@ ul {
     width: 100%;
     height: 800px;
     background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .about-title{
     width: 100%;
@@ -67,6 +72,40 @@ ul {
     text-align: center;
     padding-top:20px ;
 }
+.about-content{
+    height:80% ;
+    width: 80%;
+    background-color:lightcoral;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+
+}
+.left-about-content{
+    height:90%;
+    width: 40%;
+    background-color: lightseagreen;
+    background-image: url("https://m.media-amazon.com/images/I/61QO4GFiMCL._UF1000,1000_QL80_.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.right-about-content{
+    height: 90%;
+    width: 40%;
+    background-color: cyan;
+    text-align: center;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
 
 /* about section css end------- */
 
@@ -93,7 +132,7 @@ ul {
 .project-cards{
     width: 80%;
     height: 80%;
-    background-color: chocolate;
+    background-color:darkgray;
     display: flex;
     justify-content: space-around;
      align-items: center;
@@ -102,12 +141,89 @@ ul {
 
     
 }
+/* card 1 */
 .cards{
     width: 20%;
     height: 200px;
     background-color: #E5BEB5;
     border-radius: 10px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5K08rKxUEHZsgxTHElnQc6bFEmuVzD6FUg&s");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+/* card 2 */
+.cards-2{
+width: 20%;
+    height: 200px;
+    background-color: #E5BEB5;
+    border-radius: 10px;
+    background-image: url("https://cdn.mos.cms.futurecdn.net/Vp9WvV7YKdH4k8sKRePcE8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* card 3 */
+.cards-3{
+width: 20%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    background-image: url("https://files.ably.io/ghost/prod/2023/12/choosing-the-best-javascript-frameworks-for-your-next-project.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* card 4 */
+.cards-4{
+width: 20%;
+    height: 200px;
+    background-color: #E5BEB5;
+    border-radius: 10px;
+    background-image: url("https://www.mindrops.com/images/nodejs-image.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* card 5 */
+.cards-5{
+width: 20%;
+    height: 200px;
+    background-color: #E5BEB5;
+    border-radius: 10px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG-CLUbY0yg_sNuL2fsGS9I447M07-PYTw9Q&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* card 6 */
+.cards-6{
+width: 20%;
+    height: 200px;
+    background-color: #E5BEB5;
+    border-radius: 10px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb7-XGRTbolGyzHZkd3BFjy4oXjwapRpBsGg&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* cards 7 */
+.cards-7{
+width: 20%;
+    height: 200px;
+    background-color: #E5BEB5;
+    border-radius: 10px;
+    background-image: url("https://www.shutterstock.com/image-illustration/c-code-on-dark-background-600nw-1896170293.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* cards 8 */
+.cards-8{
+width: 20%;
+    height: 200px;
+    background-color: #E5BEB5;
+    border-radius: 10px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKfxxgtvjoywpYYFjqCM2IByvFIxA6n40Wtw&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 /* project section css end----- */
 
 

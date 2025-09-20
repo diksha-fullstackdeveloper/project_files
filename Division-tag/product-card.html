@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            height: auto;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .products-container {
+            height: 130vh;
+            width: 100vw;
+            background: linear-gradient(purple, rgb(197, 68, 90));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+
+        }
+
+        /* products cards */
+        .products-cards {
+            height: 400px;
+            width: 20%;
+            background-color: cornflowerblue;
+            border-radius: 10%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            
+
+
+        }
+        .products{
+            height: auto;
+            width: 80%;
+            
+            display: flex;
+            justify-content: center;
+            margin:20px ;
+            flex-wrap: wrap;
+            gap: 30px;
+
+        }
+        /* card 1 */
+        .card-image{
+            height: 60%;
+            width: 80%;
+            background-image: url("https://m.media-amazon.com/images/I/81V2hzNkcsL._UF894,1000_QL80_.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .card-content{
+            height: 20%;
+            width: 80%;
+            
+            
+        }
+        /* card 2 */
+        .book-image{
+            height: 60%;
+            width: 80%;
+            background-image: url("https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3N8ZW58MHx8MHx8fDA%3D");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .book-price{
+            height: 20%;
+            width: 80%;
+
+
+        }
+        /* card 3 */
+        .laptop-image{
+            height: 60%;
+            width: 80%;
+            background-image: url("https://image.made-in-china.com/318f0j00nEfGPdYIhWom/6%E6%9C%8814%E6%97%A5%287%29.mp4.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .laptop-content{
+            height: 20%;
+            width: 80%;
+        }
+        /* card 4 */
+        .mac-mini{
+            height: 60%;
+            width: 80%;
+            background-image: url("https://cdn.shopify.com/s/files/1/1520/4366/files/mac-mini-m4-stand-hub-with-ssd-enclosure-hubs-satechi-450143.webp?v=1738628847");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .macmini-content{
+            height: 20%;
+            width: 80%;
+        }
+        .mouse-image{
+            height: 60%;
+            width: 80%;
+            background-image: url("https://5.imimg.com/data5/UW/AX/MY-54308179/mouse.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .mouse-content{
+            height: 20%;
+            width: 80%;
+        }
+        /* card 6 */
+        .Ipad-image{
+            height: 60%;
+            width: 80%;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0LE0YqmC_c_PehtOm-HCS8Jrb8eLUCAfUkA&s");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .Ipad-content{
+            height: 20%;
+            width: 80%;
+        }
+        /* card 7 */
+        .speaker-image{
+            height: 60%;
+            width: 80%;
+            background-image: url("https://www.boat-lifestyle.com/cdn/shop/products/01_8859ee4d-ba1f-4d84-b64f-90aa38a3ca07_1500x.jpg?v=1655373080");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .speaker-content{
+            height: 20%;
+            width: 80%;
+        }
+        /* card 8 */
+        .phoneholder-image{
+            height: 60%;
+            width: 80%;
+            background-image: url("https://images-cdn.ubuy.co.in/63c5fedb59313e05325e6d31-nulaxy-dual-folding-cell-phone-stand.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .phoneholder-content{
+            height: 20%;
+            width: 80%;
+        }
+    </style>
+    <link rel="stylesheet" href="./portfolio.css">
+    <title>product cards</title>
+
+
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="logo">
+            <h1>Portfolio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Project</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header end -->
+    <main class="products-container">
+        <div class="products">
+            <!-- card 1 -->
+            <div class="products-cards">
+                
+                <div class="card-image"></div>
+                <div class="card-content"><h1>Frame</h1><h2>Amount:000$</h2></div>
+            </div>
+            <!-- card 2 -->
+            <div class="products-cards">
+                <div class="book-image"></div>
+                <div class="book-price"><h1>Books</h1><h2>Amount:000$</h2></div>
+            </div>
+            <!-- card 3 -->
+            <div class="products-cards">
+                <div class="laptop-image"></div>
+                <div class="laptop-content"><h1>Laptop</h1><h2>Amount:000$</h2></div>
+            </div>
+            <!-- card 4 -->
+            <div class="products-cards">
+                <div class="mac-mini"></div>
+                <div class="macmini-content"><h1>Mac-Mini</h1><h2>Amount:000$</h2></div>
+            </div>
+            <!-- card 5 -->
+            <div class="products-cards">
+                <div class="mouse-image"></div>
+                <div class="mouse-content"><h1>Mouse</h1><h2>Amount:000$</h2></div>
+            </div>
+            <!-- card 6 -->
+            <div class="products-cards">
+                <div class="Ipad-image"></div>
+                <div class="Ipad-content"><h1>Ipad</h1><h2>Amount:000$</h2></div>
+            </div>
+              <!-- card 7 -->
+            <div class="products-cards">
+                <div class="speaker-image"></div>
+                <div class="speaker-content"><h1>Speaker</h1><h2>Amount:000$</h2></div>
+            </div>
+            <!-- card 8 -->
+            <div class="products-cards">
+                <div class="phoneholder-image"></div>
+                <div class="phoneholder-content"><h1>Phoneholder</h1><h2>Amount:000$</h2></div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
