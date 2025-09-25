@@ -16,8 +16,8 @@
             width: 820px;
             background-color:lightslategrey;
             display: grid;
-            grid-template-columns: 200px 200px 200px 200px;
-            grid-template-rows: 200px 200px 200px;
+            grid-template-columns:repeat(8, 1fr);
+            grid-template-rows:;
             gap: 5px;
             
 
@@ -28,27 +28,11 @@
            border-width: 2px;
            border-style: solid;
            border-color: black;
-           display: flex;
-           justify-content: center;
-           text-align: center;
+           
            border-radius: 10px;
            
         }
-        .big-box{
-            grid-column: span 2;
-        }
-        .big-row{
-            grid-row: span 3;
-        }
-        .first-row{
-            grid-row: span 2;
-        }
-        .second-row{
-            grid-column: span 3;
-        }
-        .thired-row{
-            grid-column: span 3;
-        }
+        
 
 
     </style>

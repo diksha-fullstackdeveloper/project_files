@@ -16,30 +16,39 @@
             height: 800px;
             width: 800px;
             display: grid;
-            grid-template-columns: 200px 200px 200px 200px;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(8, 1fr);
             background-color: aqua;
-           
+
 
         }
 
-        .box {
-            background-color:lightpink;
-            text-align: center;
+        .box{
+            background-color:lightslategray;
             border-style: solid;
-            border-width: 2px;
-            border-color: black;
-            align-items: center;
-            display: flex;
-            justify-content: center;
         }
 
-        .big-box {
-            grid-column: span 3;
+        .box-one {
+            grid-column-start: 1;
+            grid-column-end: 3;
         }
 
-        .big-row {
-            grid-row: span 2;
+        .box-two {
+            grid-column: 3 / 3;
+        }
+
+        .box-three {
+            grid-column: span 5;
+        }
+        .box-four{
+            grid-column-start: 5;
+            grid-column-end: 7;
+        }
+        /* short hand for span  */
+        .box-six{
+            grid-column: 3 / 6;
+        }
+        .box-seven{
+            grid-column:5 / 10 ;
         }
     </style>
 
@@ -49,19 +58,19 @@
 <body>
     <!-- main-contaniner -->
     <div class="main-container">
-        <div class="box big-box">1</div>
-        <div class="box big-row">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
-        <div class="box">6</div>
+        <div class="box box-one">1</div>
+        <div class="box box-two">2</div>
+        <div class="box box-three">3</div>
+        <div class="box box-four">4</div>
+        <div class="box box-five">5</div>
+        <div class="box box-six">6</div>
         <div class="box">7</div>
         <div class="box">8</div>
         <div class="box">9</div>
         <div class="box">10</div>
         <div class="box">11</div>
-        <div class="box">12</div>
-        <div class="box">13</div>
+        <div class="box ">12</div>
+        <div class="box box-seven">13</div>
         <div class="box">14</div>
         <div class="box">15</div>
         <div class="box">16</div>
