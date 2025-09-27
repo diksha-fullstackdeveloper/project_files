@@ -17,7 +17,7 @@
             background-color:lightslategrey;
             display: grid;
             grid-template-columns:repeat(8, 1fr);
-            grid-template-rows:;
+            grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             gap: 5px;
             
 
@@ -32,6 +32,18 @@
            border-radius: 10px;
            
         }
+        .big-box{
+            background-color: aqua;
+            grid-column-start: span 2;
+        }
+        .big-row{
+            background-color: chocolate;
+            grid-row-start: span 2;
+        }
+        .first-row{
+            background-color: cyan;
+            grid-column-start: span 3;
+        }
         
 
 
@@ -45,20 +57,28 @@
         <!-- boxes -->
         <div class="box big-box">1</div>
         <div class="box big-row">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box first-row">5</div>
+        <div class="box big-box">3</div>
+        <div class="box big-row">4</div>
+        <div class="box">5</div>
         <div class="box">6</div>
-        <div class="box">7</div>
+        <div class="box first-row">7</div>
         <div class="box ">8</div>
         <div class="box second-row">9</div>
         <div class="box">10</div>
         <div class="box">11</div>
         <div class="box">12</div>
-        <div class="box">13</div>
+        <div class="box big-box">13</div>
         <div class="box">14</div>
         <div class="box thired-row">15</div>
-        <div class="box ">16</div>
+        <div class="box big-box">16</div>
+        <div class="box big-box">17</div>
+        <div class="box first-row">18</div>
+        <div class="box first-row">19</div>
+        <div class="box">20</div>
+        <div class="box big-row">21</div>
+        <div class="box big-box">22</div>
+        <div class="box">23</div>
+        <div class="box">24</div>
     </div>
 </body>
 </html>
