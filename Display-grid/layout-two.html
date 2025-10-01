@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color:gray;
+            grid-template-columns: 4fr 3fr;
+            grid-template-rows: 3fr 1fr 1fr 2fr;
+            display: grid;
+            grid-template-areas: "lorem1 lorem1 lorem6"
+                "lorem2 lorem3 lorem6"
+                "lorem5 lorem5 lorem6";
+            gap: 10px;    
+        }
+
+        .lorem1 {
+            grid-area: lorem1;
+            background-color: aqua;
+        }
+
+        .lorem2 {
+            grid-area: lorem2;
+            background-color: blue;
+        }
+
+        .lorem3 {
+            grid-area: lorem3;
+            background-color: blueviolet;
+        }
+
+        .lorem4 {
+            grid-area: lorem4;
+            background-color: burlywood;
+        }
+
+        .lorem5 {
+            grid-area: lorem5;
+            background-color: chocolate;
+        }
+
+        .lorem6 {
+            grid-area: lorem6;
+            background-color: cornflowerblue;
+        }
+    </style>
+
+    <title>layout two</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="lorem1"></div>
+        <div class="lorem2"></div>
+        <div class="lorem3"></div>
+        <div class="lorem4"></div>
+        <div class="lorem5"></div>
+        <div class="lorem6"></div>
+    </div>
+
+</body>
+
+</html>
