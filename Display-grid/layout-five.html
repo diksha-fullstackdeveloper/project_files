@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main-container{
+            height: 100vh;
+            width: 100vw;
+            background-color: gray;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr ;
+            gap: 10px;
+            
+
+        }
+        .layout-1{
+            grid-row: span 2;
+            background-color: aqua;
+        }
+        .layout-2{
+            grid-column: span 2;
+            background-color: burlywood;
+        }
+        .layout-3{
+            grid-column: span 2;
+            background-color:lightsteelblue;
+        }
+        .layout-4{
+            grid-column: span 1;
+            grid-row: span 1;
+            background-color: lightseagreen;
+        }
+        .layout-5{
+            grid-column:span 2 ;
+            background-color: lightcoral;
+        }
+        .layout-6{
+            grid-row: span 2;
+            background-color: lightseagreen;
+        }
+        .layout-7{
+            grid-row: span 1;
+            background-color:lightcoral;
+        }
+        .layout-8{
+            grid-column: span 2;
+            background-color: peru;
+        }
+        .layout-9{
+            grid-column: span 1;
+            background-color: lightgreen;
+        }
+
+        
+    </style>
+    <title>layout five</title>
+</head>
+<body>
+    <div class="main-container">
+       <div class="layout-1"></div>
+       <div class="layout-2"></div>
+       <div class="layout-3"></div>
+       <div class="layout-4"></div>
+       <div class="layout-5"></div>
+       <div class="layout-6"></div>
+       <div class="layout-7"></div>
+       <div class="layout-8"></div>
+       <div class="layout-9"></div>
+    </div>
+    
+</body>
+</html>

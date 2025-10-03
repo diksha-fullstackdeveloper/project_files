@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+       body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       .main-container{
+        height: 100vh;
+        width: 100vw;
+        background-color:white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        gap: 13px;
+       }
+       .box-1{
+        grid-row: 1/span 2;
+        background-color:cornflowerblue;
+       }
+       .box-2{
+          grid-row: 1/span 2;
+        background-color:cornflowerblue;
+       }
+       .box-3{
+        grid-row: 3/span 3;
+        background-color:cornflowerblue;
+       }
+       .box-4{
+        grid-row: 1/span 3;
+        background-color: cornflowerblue;
+       }
+       .box-5{
+        grid-column:span 2;
+        background-color: cornflowerblue;
+       }
+       .box-6{
+        grid-row: span 2;
+        background-color: cornflowerblue;
+       }
+       .box-7{
+        grid-row: span 3;
+        background-color:cornflowerblue;
+       }
+       .box-8{
+        grid-column: span 1;
+        background-color:cornflowerblue;
+       }
+       .box-9{
+        grid-column: span 1;
+        background-color:cornflowerblue;
+       }
+       .box-10{
+        grid-column: span 2;
+        background-color:cornflowerblue;
+       }
+   </style>
+    <title>layout seven</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+        <div class="box-4">4</div>
+        <div class="box-5">5</div>
+        <div class="box-6">6</div>
+        <div class="box-7">7</div>
+        <div class="box-8">8</div>
+        <div class="box-9">9</div>
+        <div class="box-10">10</div>
+    </div>
+</body>
+</html>
