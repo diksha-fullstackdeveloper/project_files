@@ -11,6 +11,9 @@ header{
     height:70px;
     width: 100%;
     background-color: #27374D;
+    background-image: url("https://plus.unsplash.com/premium_photo-1682464651356-3c6780eff00c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWklMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -33,7 +36,10 @@ ul{
 .home{
     width: 100%;
     height: 800px;
-    background-color: #526D82;
+    background-color: #0E2148;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/009/750/206/small_2x/hi-tech-digital-circuit-board-futuristic-ai-pad-and-electrical-lines-connected-on-blue-lighting-background-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -47,13 +53,16 @@ ul{
 
  .heading-one{
     font-size: 60px;
-    color: black;
+    color:white;
  }
 
-
+.heading-two{
+    font-size: 40px;
+    color:black;
+    font-style:normal;
+}
  
     
-
 h2{
     font-size: 40px;
     color:black;
@@ -158,7 +167,7 @@ h2{
     height: 60%;
     width: 40%;
     background-color: aqua;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5K08rKxUEHZsgxTHElnQc6bFEmuVzD6FUg&s");
+    background-image: url("https://img.freepik.com/free-photo/programming-background-collage_23-2149901776.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
@@ -168,7 +177,7 @@ h2{
     width: 40%;
     background-color: #001C30;
     border-radius: 10px;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUH-oIAvcVSDEN54K4XFbmUAynW9xva-dQ0g&s");
+    background-image: url("https://png.pngtree.com/background/20230527/original/pngtree-css-vector-letter-on-black-background-picture-image_2752935.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
