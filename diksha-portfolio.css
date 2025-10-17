@@ -67,6 +67,10 @@ h2{
     font-size: 40px;
     color:black;
 }
+.styl-bio{
+    font-size: 40px;
+    color: FF9A00;
+}
 
 
 
@@ -101,34 +105,35 @@ h2{
 .about-content{
     height:90%;
     width: 90%;
-    background-color:#98A1BC;
+    background-color:white;
     display: flex;
     justify-content:space-evenly;
     align-items: center;
     text-align: center;
     
+    
 }
 .image-box{
-    height:90% ;
-    width: 30%;
+    height:60% ;
+    width: 20%;
     border-style: solid;
     border-color: lightslategray;
     background-color: beige;
     border-radius: 40px;
-    background-image: url("./Dikshayele.jpeg");
+    background-image: url("./enjoy.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .information-box{
-    height: 90%;
-    width: 40%;
+    height: 60%;
+    width: 60%;
     background-color:white;
     border-radius: 20px;
     font-size:25px;
     font-style: normal;
     color: black;
-    border-style: solid;
-    border-color: lightslategray;
+    
+
 }
 /* about section end */
 
