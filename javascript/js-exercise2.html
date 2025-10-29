@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .main-container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 80%;
+            width: 80%;
+            background-color: azure;
+            
+        }
+        #button{
+            cursor: pointer;
+            background-color: burlywood;
+        }
+        .display{
+            height: 50%;
+            width: 70%;
+            background-color: aqua;
+
+        }
+        .input-area{
+            height: 80%;
+            width: 80%;
+            background-color: cadetblue;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="main-container">
+    <div class="container">
+        <div id="display"></div>
+        <div class="input-area">
+         <button class="click-button" onclick="diksha()">click</button>
+         <input type="text" class="input-field1">
+         <input type="text" class="input-field2">
+         </div>
+    </div>
+   </div>
+<script>
+    function diksha(){
+       let x = Number (document.getElementById("input-field1").value);
+       let y = Number (document.getElementById("inputfield2").value);
+        document.getElementById("display").innerHTML = x * y ;
+    }
+</script>
+</body>
+</html>
