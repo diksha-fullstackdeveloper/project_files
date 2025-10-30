@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <style>
-        body{
+        body {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        .products-container{
+
+        .products-container {
             height: 100vh;
             width: 100vw;
             background-color: white;
             display: flex;
             flex-direction: column;
-            justify-content:flex-start;
+            justify-content: flex-start;
             align-items: center;
             text-align: center;
             gap: 10px;
         }
-        .products-title{
-            height: 8%;
+
+        .products-title {
+            height: 10%;
             width: 100%;
             padding-top: 10px;
             gap: 30px;
         }
-        .products{
-            height:90%;
-            width:100%;
-            background-color:#EAEFEF;
+
+        .products {
+            height: 90%;
+            width: 100%;
+            background-color:white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -35,19 +39,21 @@
             gap: 30px;
             flex-wrap: wrap;
         }
-         .product-card{
-            height:350PX;
+
+        .product-card {
+            height: 50%;
             width: 30%;
-            background-color:#D4C9BE;
+            background-color: white;
             border-radius: 20px;
             gap: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-           
-         }
-         .image-card{
+
+        }
+
+        .image-card {
             height: 70%;
             width: 80%;
             background-color: rgb(118, 94, 140);
@@ -55,86 +61,113 @@
             background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-css-tiled-letters-concept-and-theme-symbol-html-illustration-photo-image_23067644.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-            }
-            .image-card-one
-            {
-                height: 70%;
-                width: 80%;
-                border-radius: 15px;
-                background-color: white;
-                background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-css-tiled-letters-concept-and-theme-symbol-html-illustration-photo-image_23067644.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            .image-card-two{
-                height: 70%;
-                width: 80%;
-                background-color: white;
-                border-radius: 15px;
-                background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-css-tiled-letters-concept-and-theme-symbol-html-illustration-photo-image_23067644.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            .image-card-three{
-                height: 70%;
-                width: 80%;
-                border-radius: 15px;
-                background-color: white;
-                background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-css-tiled-letters-concept-and-theme-symbol-html-illustration-photo-image_23067644.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            .image-card-four{
-                height: 70%;
-                width: 80%;
-                border-radius: 15px;
-                background-color: white;
-                background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-css-tiled-letters-concept-and-theme-symbol-html-illustration-photo-image_23067644.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-        
+        }
 
+        .image-card-one {
+            height: 70%;
+            width: 80%;
+            border-radius: 15px;
+            background-color: white;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-css-tiled-letters-concept-and-theme-symbol-html-illustration-photo-image_23067644.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .image-card-two {
+            height: 70%;
+            width: 80%;
+            background-color: white;
+            border-radius: 15px;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-css-tiled-letters-concept-and-theme-symbol-html-illustration-photo-image_23067644.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .image-card-three {
+            height: 70%;
+            width: 80%;
+            border-radius: 15px;
+            background-color: white;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-css-tiled-letters-concept-and-theme-symbol-html-illustration-photo-image_23067644.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .image-card-four {
+            height: 70%;
+            width: 80%;
+            border-radius: 15px;
+            background-color: white;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-css-tiled-letters-concept-and-theme-symbol-html-illustration-photo-image_23067644.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        button {
+            height: 14%;
+            width: 25%;
+            background-color: lightgray;
+            border-radius: 10px;
+        }
+        h1{
+            height: 10%;
+            width: 100%;
+            
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Projects</title>
 </head>
+
 <body>
     <main class="products-container">
-        <div class="products-title"><h1> <B>My Completed Projects</B> </h1></div>
+        <div class="products-title">
+            <h1 class="heading-one" > <B>My Completed Projects</B> </h1>
+        </div>
         <div class="products">
             <!-- card 1 -->
-             <div class="product-card">
-               
-                <div class="image-card"><a href="./Division-tag/layout-three.html">flex layout</a></div>
-                <div class="content"><h1>Flex Layout</h1></div>
-                
-             </div>
-             <div class="product-card">
-              
-                <div class="image-card-one"><a href="./Division-tag/ chess-board.html">Chess By Flex</a></div>
-                <div class="content"><h1>Chess By Flex</h1></div>
-             </div>
-             <div class="product-card">
-               
-                <div class="image-card-two"><a href="./Display-grid/layout-seven.html">Grid layout</a></div>
-                <div class="content"><h1> Grid Layout</h1></div>
-             </div>
-             <div class="product-card">
-                
-                <div class="image-card-three"><a href="./Display-grid/grid-chess.html">Grid chess</a></div>
-                <div class="content"><h1>Grid Chess</h1></div>
-             </div>
-             <div class="product-card">
-                
-                <div class="image-card-four"><a href="./Division-tag/indian-flag.html">Flag</a></div>
-                <div class="content"><h1>Flag</h1></div>
-             </div>
-            
-            
-             
+            <div class="product-card">
+                <div class="image-card"></div>
+                <div class="content">
+                    <h1>Flex Layout</h1>
+                </div>
+                <button><a href="./Division-tag/layout-three.html">flex layout</a></button>
+
+            </div>
+            <div class="product-card">
+                <div class="image-card-one"></div>
+                <div class="content">
+                    <h1>Chess By Flex</h1>
+                </div>
+                <button><a href="./Division-tag/ chess-board.html">Chess By Flex</a></button>
+            </div>
+            <div class="product-card">
+                <div class="image-card-two"></div>
+                <div class="content">
+                    <h1> Grid Layout</h1>
+                </div>
+                <button><a href="./Display-grid/layout-seven.html">Grid layout</a></button>
+            </div>
+            <div class="product-card">
+                <div class="image-card-three"></div>
+                <div class="content">
+                    <h1>Grid Chess</h1>
+                </div>
+                <button><a href="./Display-grid/grid-chess.html">Grid chess</a></button>
+            </div>
+            <div class="product-card">
+                <div class="image-card-four"></div>
+                <div class="content">
+                    <h1>Flag</h1>
+                </div>
+                <button><a href="./Division-tag/indian-flag.html">Flag</a></button>
+            </div>
+
+
+
         </div>
     </main>
 </body>
+
 </html>

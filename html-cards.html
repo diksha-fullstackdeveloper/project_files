@@ -1,120 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <style>
-        body{
+        body {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        .products-container{
+
+        .products-container {
             height: 100vh;
             width: 100vw;
             background-color: white;
             display: flex;
             flex-direction: column;
-            justify-content:flex-start;
+            justify-content: flex-start;
             align-items: center;
             text-align: center;
-            
+
         }
-        .products-title{
+
+        .products-title {
             height: 10%;
             width: 100%;
-            background-color:#F7F9F2;
+            background-color: #F7F9F2;
             padding-top: 10px;
             gap: 30px;
         }
-        .products{
-            height:90%;
-            width:100%;
-            background-color:#EAEFEF;
+
+        .products {
+            height: 60%;
+            width: 100%;
+            background-color: #EAEFEF;
             display: flex;
-            justify-content:flex-start;
+            justify-content: flex-start;
             align-items: center;
             text-align: center;
             flex-direction: row;
             gap: 30px;
-        
+
         }
-         .product-card{
-            height:400PX;
+
+        .product-card {
+            height: 400PX;
             width: 40%;
-            background-color:;
+            background-color: white;
             border-radius: 20px;
             gap: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-           
-         }
-         .image-card{
+
+        }
+
+        .image-card {
             height: 70%;
             width: 80%;
-            background-color:;
+            background-color: white;
             border-radius: 15px;
             background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-html-isolated-tiled-letters-concept-and-theme-hyper-text-markup-language-markup-white-photo-image_23069876.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-            }
-            .image-card-one{
-                height: 70%;
-                width: 80%;
-                border-radius: 15px;
-                background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-html-isolated-tiled-letters-concept-and-theme-hyper-text-markup-language-markup-white-photo-image_23069876.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            .image-card-two{
-                height: 70%;
-                width: 80%;
-                border-radius: 15px;
-                background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-html-isolated-tiled-letters-concept-and-theme-hyper-text-markup-language-markup-white-photo-image_23069876.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            .image-card-three{
-                height: 70%;
-                width: 80%;
-                border-radius: 15px;
-                background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-html-isolated-tiled-letters-concept-and-theme-hyper-text-markup-language-markup-white-photo-image_23069876.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
+        }
 
-            
+        .image-card-one {
+            height: 70%;
+            width: 80%;
+            border-radius: 15px;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-html-isolated-tiled-letters-concept-and-theme-hyper-text-markup-language-markup-white-photo-image_23069876.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
+        .image-card-two {
+            height: 70%;
+            width: 80%;
+            border-radius: 15px;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-html-isolated-tiled-letters-concept-and-theme-hyper-text-markup-language-markup-white-photo-image_23069876.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .image-card-three {
+            height: 70%;
+            width: 80%;
+            border-radius: 15px;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-html-isolated-tiled-letters-concept-and-theme-hyper-text-markup-language-markup-white-photo-image_23069876.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        button {
+            height: 10%;
+            width: 30%;
+            background-color: lightgray;
+            border-radius: 10px;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Projects</title>
 </head>
+
 <body>
     <main class="products-container">
-        <div class="products-title"><h1> <B><U>My Completed Projects</U></B> </h1></div>
+        <div class="products-title">
+            <h1> <B><U>My Completed Projects</U></B> </h1>
+        </div>
         <div class="products">
             <!-- card 1 -->
-             <div class="product-card">
-                
-                <div class="image-card"><a href="./home-page.html">Form page</a></div>
-                <div class="content"><h1>HTML Form</h1></div>
-                
-             </div>
-             
-             <div class="product-card">
-                
-                <div class="image-card-two"><a href="./table-tags/time-table.html">HTML Table </a></div>
-                <div class="content"><h1>HTML Time Table</h1></div>
-             </div>
-             <div class="product-card">
-                
-                <div class="image-card-three"><a href="./project-form.html">Account Open Form</a></div>
-                <div class="content"><h1>Bank Account Form</h1></div>
-             </div>
-            
-             
+            <div class="product-card">
+
+                <div class="image-card"></div>
+
+                <div class="content">
+                    <h1>HTML Form</h1>
+                </div>
+                <button><a href="./home-page.html">Form page</a></button>
+
+            </div>
+
+            <div class="product-card">
+
+                <div class="image-card-two"></div>
+
+                <div class="content">
+                    <h1>HTML Time Table</h1>
+                </div>
+                <button><a href="./table-tags/time-table.html">HTML Table </a></button>
+            </div>
+            <div class="product-card">
+
+                <div class="image-card-three"></div>
+
+                <div class="content">
+                    <h1>Bank Account Form</h1>
+                </div>
+                <button><a href="./project-form.html">Account Open Form</a></button>
+            </div>
+
+
         </div>
     </main>
 </body>
+
 </html>
