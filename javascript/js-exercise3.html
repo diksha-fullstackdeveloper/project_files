@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-exercise3</title>
+    <style>
+        /* declaration */
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* tag selectors */
+        .main-container{
+            height: 600px;
+            width: 650px;
+            background-color:burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            gap: 10px;
+
+        }
+        .container{
+            height: 70%;
+            width: 80%;
+            background-color: aqua;
+            border-radius: 10px;
+            
+        }
+        button{
+            cursor: pointer;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <img src="./bulb-off.png" alt="" height="350px" width="200px">
+            
+            <div id="bulb"></div>
+            
+            <button class="click-button" onclick="bulbon()">On</button>
+            <button class="click-button" onclick="bulboff()">Off</button>
+           
+        </div>
+    </div>
+    <script>
+        function bulbon(){
+         let x = "<img src='./bulb-on.png' height='350px' width='200px'>";
+        document.getElementById("bulb").innerHTML = x;
+           
+        }
+        function bulboff(){
+           let y = "<img src='./bulb-off.png' height='350px' width='200px'>";
+        document.getElementById("bulb").innerHTML = y;
+            
+        }
+    </script>
+</body>
+</html>
