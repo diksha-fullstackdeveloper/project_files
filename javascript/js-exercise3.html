@@ -14,53 +14,67 @@
         /* tag selectors */
         .main-container{
             height: 600px;
-            width: 650px;
-            background-color:burlywood;
+            width: 400px;
+            background-color:lightblue;
             display: flex;
-            justify-content: center;
+            justify-content:flex-start;
             align-items: center;
             border-radius: 10px;
             gap: 10px;
+            flex-direction: column;
+            border-color: gray;
 
         }
         .container{
-            height: 70%;
-            width: 80%;
-            background-color: aqua;
-            border-radius: 10px;
+            height: 30%;
+            width: 40%;
+            background-color:white;
+            border-radius: 80px;
+            border-color:gray ;
             
         }
-        button{
-            cursor: pointer;
-        }
         
         
-
     </style>
 </head>
 <body>
     <div class="main-container">
         <div class="container">
-            <img src="./bulb-off.png" alt="" height="350px" width="200px">
+           <h1 id="diksha"></h1>
             
-            <div id="bulb"></div>
-            
-            <button class="click-button" onclick="bulbon()">On</button>
-            <button class="click-button" onclick="bulboff()">Off</button>
            
         </div>
     </div>
     <script>
-        function bulbon(){
-         let x = "<img src='./bulb-on.png' height='350px' width='200px'>";
-        document.getElementById("bulb").innerHTML = x;
-           
-        }
-        function bulboff(){
-           let y = "<img src='./bulb-off.png' height='350px' width='200px'>";
-        document.getElementById("bulb").innerHTML = y;
+       
+            let name = ("Diksha yele");
+            document.getElementById("diksha").innerHTML = diksha;
             
-        }
+        
+            
+            function age(){
+                 let age = ("20");
+                 document.getElementById("diksha").innerHTML = "age";
+            }
+           function collage(){
+             let college = ("GNIET Nagpur")
+             document.get
+           }
+            
+            let myClass = (" B.E 2nd year in AI branch");
+            let Add = ("at.sonegaon  po.kawalewada ta.goregaon dist.gondia");
+            let phoneNo = ("8999313303");
+            let hobbies = ("singing");
+            let gender = ("female");
+            let skills = ("HTML , CSS")
+            let favoriteSinger = ("shreya ghoshal");
+            let emergencyNo = ("9637768140");
+            let passion = ("Full Stack Developer");
+            let emailAddress
+            
+             
+        
+       
     </script>
 </body>
 </html>
