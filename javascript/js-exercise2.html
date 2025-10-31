@@ -57,6 +57,9 @@
             border-radius: 10px;
 
         }
+        .click-button:hover{
+            background-color: rgb(255, 179, 0);
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,15 +72,16 @@
             <p id="display">gds</p>
             <div class="input-area"></div>
             <button class="click-button" onclick="diksha()">click</button>
-            <input type="text" class="input-field1" placeholder="Enter the value...">
-            <input type="text" class="input-field2" placeholder="Enter the value...">
+        
+            <input type="text" class="input-field" id="input-field1" placeholder="Enter the value...">
+            <input type="text" class="input-field" id="input-field2" placeholder="Enter the value...">
         </div>
     </div>
     <script>
         function diksha() {
             let x = Number(document.getElementById("input-field1").value);
-            let y = Number(document.getElementById("inputfield2").value);
-            document.getElementById("display").innerHTML = x + y;
+            let y = Number(document.getElementById("input-field2").value);
+            document.getElementById("display").innerHTML = x * y + typeof y;
         }
     </script>
 </body>
