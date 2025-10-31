@@ -75,7 +75,7 @@ h2{
 
 /* about section start */
 .AboutMe{
-    height:60%;
+    height:80%;
     width: 100%;
     background-color:white;
     color: black;
@@ -233,5 +233,48 @@ button{
     width: 100%;
     background-color:white;
 }
+.contact-box{
+    height: 90%;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+
+}
+.left-container{
+    height: 90%;
+    width: 50%;
+    background-color:white;
+
+}
+.right-container{
+    height: 90%;
+    width: 50%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    text-align:start;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.input{
+    height: 10%;
+    width: 80%;
+    background-color: white;
+    border-color: gray;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+.input4{
+    height: 20%;
+    width: 80%;
+    background-color:white;
+    border-radius: 10px;
+
+}
+
 
 /* contact section end */
