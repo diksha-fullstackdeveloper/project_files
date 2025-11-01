@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .main-container{
+            height: 1100px;
+            width: 100vw;
+            background-color:white ;
+            display: flex;
+            justify-content:flex-start;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .left-container{
+            height: 100%;
+            width: 20%;
+            background-color:#0C2B4E;
+            display: flex;
+            justify-content:flex-start;
+            align-items:flex-start;
+            text-align:start;
+            flex-direction: column;
+            column-width:10px;
+        }
+        .right-container{
+            height: 100%;
+            width: 30%;
+            background-color:lightslategray;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        img{
+            height: 150px;
+            width: 150px;
+            border-radius: 20px;
+            border-color: black;
+            
+            }
+            h1{
+                color:rgba(255, 255, 255, 0.814);
+                font-size:25px;
+                margin-right:10px;
+
+            }
+            h3{
+                color: rgba(255, 255, 255, 0.655);
+            
+            }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-exercise7</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <img src=""  id="profileImage" alt="" height="200px" width="200px">
+            <h1><b id="name"></b></h1>
+            <h3 id="courceName"></h3> <br> <br>
+            <h1><u id="title"></u></h1>
+            <h3  id="phoneNo"></h3>
+            <h3 id="email"></h3>
+            <h3 id="mylocation"></h3>
+            <br><br>
+            <h1><u id="secondTitle"></u></h1>
+            <h3 id="myfirstskill"></h3>
+            <h3 id="mysecondskill"></h3>
+            <h3 id="mythirdskill"></h3>
+            <h1><u id="thirdTitle"></u></h1>
+            <h3 id="english"></h3>
+            <h3 id="hindi"></h3>
+            <h3 id="marathi"></h3>
+            
+        </div>
+        <div class="right-container">
+            
+        </div>
+    </div>
+
+
+    <script>
+        let profileImage = "../enjoy.jpeg";
+        let name = "Diksha Rajkumar Yele";
+        let courceName = "Full Stack Developer | AI Student";
+        let title = "Contact";
+        let phoneNo = "+91 8999313303";
+        let email = "dikshayele668@gmail.com";
+        let mylocation = "Gondia,Maharastra,India"
+        let secondTitle = "Skills";
+        let myfirstskill = "HTML";
+        let mysecondskill = "CSS";
+        let mythirdskill = "Javascript";
+        let thirdTitle = "Languages Known";
+        let english = "English";
+        let hindi = "Hindi";
+        let marathi = "Marathi";
+
+
+
+        document.getElementById("profileImage").src = profileImage ;
+        document.getElementById("name").innerHTML = name ;
+        document.getElementById("courceName").innerHTML = courceName ;
+        document.getElementById("title").innerHTML = title ;
+        document.getElementById("phoneNo").innerHTML = phoneNo ;
+        document.getElementById("email").innerHTML = email ; 
+        document.getElementById("mylocation").innerHTML = mylocation ;
+        document.getElementById("secondTitle").innerHTML = secondTitle;
+        document.getElementById("myfirstskill").innerHTML = myfirstskill;
+        document.getElementById("mysecondskill").innerHTML = mysecondskill;
+        document.getElementById("mythirdskill").innerHTML = mythirdskill;
+        document.getElementById("thirdTitle").innerHTML = thirdTitle;
+        document.getElementById("english").innerHTML = english ;
+        document.getElementById("hindi").innerHTML = hindi ;
+        document.getElementById("marathi").innerHTML = marathi;
+
+</script>
+</body>
+</html>

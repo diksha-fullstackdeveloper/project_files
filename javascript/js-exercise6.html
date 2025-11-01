@@ -1,50 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <style>
+        .main-container{
+            height: 1100px;
+            width: 100vw;
+            background-color:lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+
+        }
+        .container{
+            height: 100%;
+            width:40% ;
+            background-color: white;
+            border-radius: 20px;
+          }
+          img{
+            height: 300px;
+            width: 300px;
+            border-radius: 40px;
+          }
+          .h2{
+            color: gray;
+          }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js-exercise6</title>
 </head>
+
 <body>
-    <img src=" https://ukfostering.org.uk/wp-content/uploads/2016/11/dummy-female-img.jpg" alt="" id="profile-image">
-    <h1 ><i id="name"></i></h1>
-    <h1 id="age"></h1>
-    <h1 id="myClass"></h1>
-    <h1 id="college"></h1>
-    <h1 id="address"></h1>
-    <h1 id="phoneNo"></h1>
-    <h1 id="emergencyNo"></h1>
-    <h1 id="emailId"></h1>
-    <h1 id="gender"></h1>
+    <div class="main-container">
+        <div class="container">
+        <img src="../enjoy.jpeg" alt="" id="profile-image" height="300px" width="300px">
+        <h1><u><b id="name"></b></u></h1>
+        <h2 id="fatherName"></h2>
+        <h2 id="motherName"></h2>
+        <h2 id="age"></h2>
+        <h2 id="myClass"></h2>
+        <h2 id="college"></h2>
+        <h2 class="h2" id="university"></h2>
+        <h2 id="address"></h2>
+        <h2 id="phoneNo"></h2>
+        <h2 id="emergencyNo"></h2>
+        <h2 id="emailId"></h2>
+        <h2 id="gender"></h2>
+        <h2 id="skills"></h2>
+        <h2 id="passion"></h2>
+        <h2 id="hobbies"></h2>
+        <h2 id="favoriteSinger"></h2>
+        </div>
+        </div>
 
-    <script>
-        let profileImage = "https://ukfostering.org.uk/wp-content/uploads/2016/11/dummy-female-img.jpg";
-        let name = "Diksha Yele";
-        let age = "19+";
-        let myClass = "B.E 2nd year in AI Branch";
-        let college = "GNIET kalmeshwar Nagpur";
-        let address = "At.Sonegaon dist.Gondia Maharastra";
-        let phoneNo = "8999313303";
-        let emergencyNo = "9637768140";
-        let emailId = "dikshayel3668@gmail.com";
-        let gender = "female";
-        document.getElementById("profile-image").src = profileImage;
-        document.getElementById("name").innerHTML = name;
-        document.getElementById("age").innerHTML = age;
-        document.getElementById("myClass").innerHTML = myClass;
-        document.getElementById("college").innerHTML = college;
-         document.getElementById("address").innerHTML = address;
-          document.getElementById("phoneNo").innerHTML = phoneNo;
-           document.getElementById("emergencyNo").innerHTML = emergencyNo;
-           document.getElementById("gender").innerHTML = gender;
-           
+        <script>
+            let profileImage = "../enjoy.jpeg";
+            let name = "Diksha Yele";
+            let fatherName = "Rajkumar yele";
+            let motherName = "vidya yele";
+            let age = "19+";
+            let myClass = "B.E 2nd year in AI Branch";
+            let college = "GNIET kalmeshwar Nagpur";
+            let university = "RTMNU university Nagpur";
+            let address = "At.Sonegaon dist.Gondia Maharastra";
+            let phoneNo = "8999313303";
+            let emergencyNo = "9637768140";
+            let emailId = "dikshayel3668@gmail.com";
+            let gender = "female";
+            let skills = "HTML, CSS";
+            let passion = "Full Stack Developer";
+            let hobbies = "singing, dancing ";
+            let favoriteSinger = "shreya ghoshal";
 
-           
-
-
-
-
-
-    </script>
+            document.getElementById("profile-image").src = profileImage;
+            document.getElementById("name").innerHTML = name;
+            document.getElementById("fatherName").innerHTML = fatherName;
+            document.getElementById("motherName").innerHTML = motherName;
+            document.getElementById("age").innerHTML = age;
+            document.getElementById("myClass").innerHTML = myClass;
+            document.getElementById("college").innerHTML = college;
+            document.getElementById("university").innerHTML = university;
+            document.getElementById("address").innerHTML = address;
+            document.getElementById("phoneNo").innerHTML = phoneNo;
+            document.getElementById("emergencyNo").innerHTML = emergencyNo;
+            document.getElementById("gender").innerHTML = gender;
+            document.getElementById("skills").innerHTML = skills;
+            document.getElementById("passion").innerHTML = passion;
+            document.getElementById("hobbies").innerHTML = hobbies;
+            document.getElementById("favoriteSinger").innerHTML = favoriteSinger;
+</script>
 </body>
+
 </html>
