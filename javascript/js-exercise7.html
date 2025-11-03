@@ -7,9 +7,11 @@
             width: 100vw;
             background-color:white ;
             display: flex;
-            justify-content:flex-start;
+            justify-content:center;
             align-items: center;
             text-align: center;
+            border-color:black;
+            border-style: solid;
             
         }
         .left-container{
@@ -17,19 +19,20 @@
             width: 20%;
             background-color:#0C2B4E;
             display: flex;
-            justify-content:flex-start;
-            align-items:flex-start;
-            text-align:start;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
             flex-direction: column;
             column-width:10px;
         }
         .right-container{
             height: 100%;
             width: 30%;
-            background-color:lightslategray;
+            background-color:white;
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
+
         }
         img{
             height: 150px;
@@ -47,6 +50,10 @@
             h3{
                 color: rgba(255, 255, 255, 0.655);
             
+            }
+            .myfirst-heading{
+                color: black;
+                margin-left: 20px;
             }
     </style>
     <meta charset="UTF-8">
@@ -73,8 +80,10 @@
             <h3 id="hindi"></h3>
             <h3 id="marathi"></h3>
             
+            
         </div>
         <div class="right-container">
+           <h1><b class="myfirst-heading" id="education"></b></h1>
             
         </div>
     </div>
@@ -96,6 +105,7 @@
         let english = "English";
         let hindi = "Hindi";
         let marathi = "Marathi";
+        let education = "Education";
 
 
 
@@ -114,6 +124,7 @@
         document.getElementById("english").innerHTML = english ;
         document.getElementById("hindi").innerHTML = hindi ;
         document.getElementById("marathi").innerHTML = marathi;
+        document.getElementById("education").innerHTML = education ;
 
 </script>
 </body>
