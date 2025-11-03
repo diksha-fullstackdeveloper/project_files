@@ -28,10 +28,11 @@
         .right-container{
             height: 100%;
             width: 30%;
-            background-color:white;
+            background-color:#E9E3DF;
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
+            flex-direction: column;
 
         }
         img{
@@ -84,6 +85,10 @@
         </div>
         <div class="right-container">
            <h1><b class="myfirst-heading" id="education"></b></h1>
+           <ul>
+            <li id="batch"></li>
+            <p></p>
+           </ul>
             
         </div>
     </div>
@@ -106,6 +111,7 @@
         let hindi = "Hindi";
         let marathi = "Marathi";
         let education = "Education";
+        let batch = "2024";
 
 
 
@@ -125,6 +131,7 @@
         document.getElementById("hindi").innerHTML = hindi ;
         document.getElementById("marathi").innerHTML = marathi;
         document.getElementById("education").innerHTML = education ;
+        document.getElementById("batch").innerHTML = batch;
 
 </script>
 </body>
