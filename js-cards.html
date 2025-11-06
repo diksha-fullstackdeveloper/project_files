@@ -14,27 +14,27 @@
         .main-container {
             height: 100vh;
             width: 100vw;
-            background-color:white;
+            background-color: white;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-direction: column;
-            gap: 10px;
+
         }
 
         .product-title {
             height: 10%;
             width: 100%;
-            background-color:#E8F9FF;
+            background-color: #E8F9FF;
             padding-top: 10px;
             gap: 30px;
 
         }
 
-        .product-container {
-            height: 50%;
+        .product-container1 {
+            height: 60%;
             width: 100%;
-            background-color:#F5F5F0;
+            background-color: #F5F5F0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -43,10 +43,21 @@
 
         }
 
+        .product-container2 {
+            height: 60%;
+            width: 100%;
+            background-color: #F5F5F0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-direction: row;
+        }
+
         .card1 {
             height: 90%;
             width: 30%;
-            background-color:#D9EAFD;
+            background-color: #D9EAFD;
             gap: 20px;
             display: flex;
             justify-content: center;
@@ -62,11 +73,43 @@
             margin-left: 600px;
         }
 
-        .image-card {
+        .image-card1 {
+            height: 60%;
+            width: 90%;
+            box-shadow: 3px 3px 5px;
+            background-color: white;
+        }
+
+        .image-card2 {
+            height: 60%;
+            width: 90%;
+            background-color: white;
+            box-shadow: 3px 3px 5px;
+        }
+
+        .image-card3 {
+            height: 60%;
+            width: 90%;
+            background-color: aliceblue;
+            box-shadow: 3px 3px 5px;
+        }
+
+        .image-card4 {
             height: 70%;
             width: 90%;
             background-color: aliceblue;
-            background-image: url("https://cdn.vectorstock.com/i/500p/13/95/js-brushstroke-letter-logo-vector-20681395.jpg");
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px;
+        }
+
+        .image-card5 {
+            height: 70%;
+            width: 90%;
+            background-color: aliceblue;
+            background-image: url("");
             background-repeat: no-repeat;
             background-size: cover;
             border-radius: 10px;
@@ -84,12 +127,14 @@
             text-align: center;
             box-shadow: 2px 2px 3px;
         }
-        button{
-            height: 10%;
+
+        button {
+            height: 15%;
             width: 25%;
             border-radius: 10px;
         }
-        a{
+
+        a {
             text-decoration: none;
         }
     </style>
@@ -103,9 +148,12 @@
         <div class="product-title">
             <h1><b>My Js Projects</b></h1>
         </div>
-        <div class="product-container">
+        <div class="product-container1">
             <div class="card1">
-                <div class="image-card"></div>
+                <div class="image-card1">
+                    <img src="https://img.freepik.com/premium-photo/glowing-light-bulb-open-book-with-bokeh-lights-background_677495-5790.jpg"
+                        alt="" height="200px" width="388px">
+                </div>
                 <div class="content">
                     <h2>Bulb On/Off</h2>
                 </div>
@@ -113,22 +161,45 @@
             </div>
             <div class="card1">
 
-                <div class="image-card"></div>
+                <div class="image-card2">
+                    <img src="https://www.shutterstock.com/image-photo/blank-notepad-sheet-calendar-your-600nw-1988573294.jpg"
+                        alt="" height="190px" width="388px">
+                </div>
                 <div class="content">
-                    <h2>universal calc</h2>
+                    <h2>Universal Calc</h2>
                 </div>
                 <button> <a href="./javascript/index.html">Click</a></button>
             </div>
             <div class="card1">
 
-            <div class="image-card"></div>
-            <div class="content">
-                <h2>Exercise</h2>
+                <div class="image-card3">
+                    <img src="https://logodix.com/logo/64181.jpg" alt="" height="200px" width="388px">
+                </div>
+                <div class="content">
+                    <h2>Exercise</h2>
+                </div>
+                <button><a href="./javascript/js-exercise8.html">click</a></button>
             </div>
-            <button><a href="./javascript/js-exercise8.html">click</a></button>
         </div>
+        <div class="product-container2">
+            <div class="card1">
+                <div class="image-card4"></div>
+                <div class="content">
+                    <h2>Simple Resume</h2>
+                </div>
+                <button><a href="./javascript/js-exercise6.html">click</a></button>
+            </div>
+            <div class="card1">
+                <div class="image-card5"></div>
+                <div class="content">
+                    <h2>Color Change Bulb</h2>
+                </div>
+                <button><a href="./javascript/js-bulbexercise.html">click</a></button>
+            </div>
+
         </div>
-        
+
+
     </div>
     </div>
 
