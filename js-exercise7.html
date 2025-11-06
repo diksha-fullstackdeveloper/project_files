@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .main-container {
+            height: 1100px;
+            width: 100vw;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+
+        }
+
+        .left-container {
+            height: 100%;
+            width: 20%;
+            background-color: #0C2B4E;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            column-width: 10px;
+        }
+
+        .right-container {
+            height: 100%;
+            width: 30%;
+            background-color: #E9E3DF;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: start;
+            flex-direction: column;
+
+        }
+
+        img {
+            height: 150px;
+            width: 150px;
+            border-radius: 20px;
+            border-color: black;
+
+        }
+
+        h1 {
+            color: rgba(255, 255, 255, 0.814);
+            font-size: 25px;
+            margin-right: 10px;
+
+        }
+
+        h3 {
+            color: rgba(255, 255, 255, 0.655);
+
+        }
+
+        .myfirst-heading {
+            color: black;
+            margin-left: 20px;
+        }
+
+        p {
+            font-size: 17px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-exercise7</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <img src="" id="profileImage" alt="" height="200px" width="200px">
+            <h1><b id="name"></b></h1>
+            <h3 id="courceName"></h3> <br> <br>
+            <h1 id="title"></h1>
+            <h3 id="phoneNo"></h3>
+            <h3 id="email"></h3>
+            <h3 id="mylocation"></h3>
+            <br><br>
+            <h1 id="secondTitle"></h1>
+            <h3 id="myfirstskill"></h3>
+            <h3 id="mysecondskill"></h3>
+            <h3 id="mythirdskill"></h3>
+            <h1 id="thirdTitle"></h1>
+            <h3 id="english"></h3>
+            <h3 id="hindi"></h3>
+            <h3 id="marathi"></h3>
+
+
+        </div>
+        <div class="right-container">
+            <h1><b class="myfirst-heading" id="education"></b></h1>
+            <ul>
+                <li id="batch"></li>
+                <h4>B.Tech in Artificial Intelligence (1st Year)</h4>
+                <p><i>RTMNU University</i></p>
+                <p>Currently pursuing first year of B.Tech in Artificial Intelligence, focusing on core programming
+                    concepts, mathematics, and fundamentals of AI and machine learning.</p>
+
+                <li id="present"></li>
+                <h4>Full Stack Web Development Course</h4>
+                <p><i>Enjoy programming</i></p>
+                <p id="enjoyp"></p>
+                <p>I have a work work experience in Hyper Text Markup Language (HTML) and Cascading Style Sheets (CSS) I
+                    worked on various of projects by using HTML & CSS</p>
+                <li id="student"></li>
+                <h4>Full Stack Web Developer (Student)</h4>
+                <p>Creating responsive and interactive web applications using modern frameworks and libraries.
+                    Integrated Development Environment (IDE)
+                    Visual Studio Code (VS Code),
+
+                    X-Code, Andriod Studio</p>
+                <br>
+
+                <h1><b class="myfirst-heading" id="project"></b></h1>
+
+                <li id="portfolio"></li>
+                <p>Developed a responsive personal portfolio website using HTML, CSS, and JavaScript. Implemented modern
+                    design principles and optimized for various screen sizes.</p>
+                      <br>
+                    <h1><b id="interest" class="myfirst-heading"></b></h1>
+                    <p>Artificial Intelligence, Machine Learning, Web Development.</p>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <script>
+        let profileImage = "../enjoy.jpeg";
+        let name = "Diksha Rajkumar Yele";
+        let courceName = "Full Stack Developer | AI Student";
+        let title = "Contact";
+        let phoneNo = "+91 8999313303";
+        let email = "dikshayele668@gmail.com";
+        let mylocation = "Gondia,Maharastra,India"
+        let secondTitle = "Skills";
+        let myfirstskill = "HTML";
+        let mysecondskill = "CSS";
+        let mythirdskill = "Javascript";
+        let thirdTitle = "Languages Known";
+        let english = "English";
+        let hindi = "Hindi";
+        let marathi = "Marathi";
+        let education = "Education";
+        let batch = "2024";
+        let present = "2025";
+        let enjoyp = "HTML|CSS";
+        let student = "2025";
+        let project = "Projects";
+        let portfolio = "Personal Portfolio Website";
+        let interest = "My Interest";
+
+
+
+        document.getElementById("profileImage").src = profileImage;
+        document.getElementById("name").innerHTML = name;
+        document.getElementById("courceName").innerHTML = courceName;
+        document.getElementById("title").innerHTML = title;
+        document.getElementById("phoneNo").innerHTML = phoneNo;
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("mylocation").innerHTML = mylocation;
+        document.getElementById("secondTitle").innerHTML = secondTitle;
+        document.getElementById("myfirstskill").innerHTML = myfirstskill;
+        document.getElementById("mysecondskill").innerHTML = mysecondskill;
+        document.getElementById("mythirdskill").innerHTML = mythirdskill;
+        document.getElementById("thirdTitle").innerHTML = thirdTitle;
+        document.getElementById("english").innerHTML = english;
+        document.getElementById("hindi").innerHTML = hindi;
+        document.getElementById("marathi").innerHTML = marathi;
+        document.getElementById("education").innerHTML = education;
+        document.getElementById("batch").innerHTML = batch;
+        document.getElementById("present").innerHTML = present;
+        document.getElementById("enjoyp").innerHTML = enjoyp;
+        document.getElementById("student").innerHTML = student;
+        document.getElementById("project").innerHTML = project;
+        document.getElementById("portfolio").innerHTML = portfolio;
+        document.getElementById("interest").innerHTML = interest;
+
+
+    </script>
+</body>
+
+</html>
