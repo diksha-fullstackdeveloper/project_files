@@ -27,7 +27,8 @@
         }
 
         p {
-            font-size: 24px;
+            font-size: 20px;
+
         }
 
         .display-area {
@@ -72,10 +73,11 @@
             align-items: center;
             gap: 20px;
         }
-        button{
+
+        button {
             height: 35%;
             width: 40%;
-            background-color: white;
+            background-color: rgb(65, 199, 53);
             font-size: 20px;
             border-radius: 10px;
         }
@@ -86,14 +88,15 @@
 </head>
 
 <body>
+    <!-- box arrangement -->
     <div class="main-container">
         <div class="display-area">
             <p>current balance</p>
             <p id="display"></p>
         </div>
         <div class="input-group">
-            <input type="number" class="input" id="input1">
-            <input type="number" class="input" id="input2">
+            <input type="number" class="input" id="input1" placeholder="enter your input...">
+            <input type="number" class="input" id="input2" placeholder="enter your input...">
         </div>
         <div class="button-group">
             <button onclick="deposite()">Add</button>
@@ -101,28 +104,30 @@
         </div>
 
     </div>
-    <script>
-        let balance = 0;
-        withdrawAmount = 0;
-        depositeAmount = 0;
-        document.getElementById("display").innerHTML = balance;
-
-        function withdraw() {
-            withdrawAmount = document.getElementById("input1").value;
-            balance = balance - Number(withdrawAmount);
-            documnet.getElementById("display").innerHTML = balance;
-            documnet.getElementById("input1").innerHTML = "";
-            alert("withdraw successful");
-        }
-        function deposite() {
-            depositeAmount = documnet.getElementById("input2").value;
-            balance = balance - Number(depositeAmount);
-            document.getElementById("display").innerHTML = balance;
-            documnet.getElementById("input2").innerHTML = "";
-        }
-
-
-    </script>
 </body>
+<script>
+    // balance information
+    let balance = 0;
+    document.getElementById("display").innerHTML = balance;
+// withdraw function
+    function withdraw() {
+        let withdrawAmount = document.getElementById("input1").value;
+        balance = balance - Number(withdrawAmount);
+        document.getElementById("display").innerHTML = balance;
+        document.getElementById("input1").value = "";
+        alert("withdraw successfull");
+    }
+    // deposite function
+    function deposite() {
+        let depositeAmount = document.getElementById("input2").value;
+        balance = balance + Number(depositeAmount); 
+        document.getElementById("display").innerHTML = balance;
+        document.getElementById("input2").value = "";
+        alert("deposite successfull")
+    }
+
+
+</script>
+
 
 </html>
