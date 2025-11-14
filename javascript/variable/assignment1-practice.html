@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>current balance</h3>
+    <h3 id="display"></h3>
+    <input type="number" id="input" placeholder="">
+
+    <button onclick="functionone()">submit</button>
+    <button onclick="functiontwo()">submit</button>
+</body>
+<script>
+    //let prachi = 0 ;
+    //document.getElementById("display").innerHTML = prachi;
+    //function functionone(){
+    let diksha = document.getElementById("input").value;
+
+    prachi = prachi + Number(diksha);
+    document.getElementById("display").innerHTML = prachi;
+    //}
+
+    let komal = 1000;
+    document.getElementById("display").innerHTML = komal;
+    function functiontwo() {
+        let charu = document.getElementById("input").value;
+        let komal = komal - Number(charu);
+        document.getElementById("display").innerHTML = komal;
+
+
+    }
+</script>
+
+</html>

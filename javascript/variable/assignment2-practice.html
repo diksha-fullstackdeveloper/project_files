@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>bank tranction system </h1>
+    <p>current balance</p>
+    <p id="display"></p>
+    <h2>deposite</h2>
+    <label>amount</label>
+    <input type="number" id="input-one">
+    <br>
+    <button onclick="deposite()">deposite</button>
+    <br>
+    <h2>withdraw</h2>
+    <label>amount</label>
+    <input type="number" id="input-two">
+    <br>
+    <button onclick="withdraw()">withdraw</button>
+</body>
+<script>
+    let balance = 100;
+
+    document.getElementById("display").innerHTML = balance;
+
+
+    function withdraw() {
+        let withdrawamount = document.getElementById("input-one").value;
+        balance = balance + Number(withdrawamount);
+        document.getElementById("input-one").innerHTML = balance;
+        document.getElementById("display").value = "";
+    }
+    function deposite() {
+        let depositeamount = document.getElementById("input-two").value;
+        balance = balance - Number(depositeamount);
+        document.getElementById("input-two").innerHTML = balance;
+        document.getElementById("display").value = "";
+
+    }
+</script>
+
+</html>
