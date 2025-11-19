@@ -1,143 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./diksha-portfolio.css">
-    <title>Diksha's Portfolio</title>
+    <!-- style tag -->
+    <style>
+        /*    declaration*/
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* tag selectors */
+        .main-container {
+            height: 80vh;
+            width: 50vw;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 1px 1px 3px 0.5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input {
+            height: 17%;
+            width: 90%;
+            background-color: white;
+            font-size: 20px;
+
+        }
+
+        button {
+            height: 18%;
+            width: 90%;
+            background-color: rgb(42, 169, 174);
+            font-size: 24px;
+            color: white;
+        }
+
+
+        label {
+            font-size: 24px;
+            color: black;
+            margin-right: 500px;
+
+
+        }
+
+        p {
+            height: 18%;
+            width: 90%;
+            background-color: white;
+            box-shadow: 1px 1px 1px 1px gray;
+            font-size: 24px;
+
+        }
+
+        b {
+            color: rgb(135, 34, 50);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Calculator</title>
 </head>
 
 <body>
-    <!-- header start -->
-    <header>
-        <div class="logo">
-            <h1><i><b>🌟Diksha Yele...</b></i></h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#homepage"><b>Home</b></a></li>
-                <li><a href="#aboutpage"><b>About</b></a></li>
-                <li><a href="#projectpage"><b>Project</b></a></li>
-                <li><a href="#contactpage"><b>Contact</b></a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- header end -->
-    <main>
-        <!-- home section css start -->
-        <section class="home" id="homepage">
-            <div class="home container">
-                <div class="home-content">
-                    <h1 class="heading-one"><b>Hi, I'm </b></h1>
-                    <h1 class="second-heading"><b>DIKSHA YELE</b></h1>
-                    <p>A passionate full stack web developer and QA Engineer</p>
-                    <p>specializing inHTML, CSS, JavaScript, and Learing</p>
-                    <p>More To Develop.</p>
+    <!-- body structure -->
+    <div class="main-container">
+        <h1>Average Calculator</h1>
+        <label>First Number:</label>
+        <input type="number" id="number1" placeholder="enter the first number...">
+        <label>Second Number:</label>
+        <input type="number" id="number2" placeholder="enter the second number...">
+        <label>Third Number:</label>
+        <input type="number" id="number3" placeholder="enter the third number...">
+        <button onclick="calculateAverage()">Calculate Average</button>
+        <p>Average of <b id="number-1"></b>, <b id="number-2"></b> and <b id="number-3"></b>is <b id="display"></b></p>
+    </div>
+    <script>
+        function calculateAverage() {
+            //input
+            let num1 = document.getElementById("number1").value;
+            let num2 = document.getElementById("number2").value;
+            let num3 = document.getElementById("number3").value;
 
-                    <button class="resume"><a href="./javascript/js-exercise7.html">Open Resume</a></button>
+            //process
+            let sum = num1 + num2 + num3;
+            let avg = sum / 3;
 
-                </div>
-                <div class="homepage-imagebox"></div>
-            </div>
-        </section>
-        <!-- home section end -->
-        <!-- About section start -->
-        <section class="about-me" id="aboutpage">
-            
-                <h1><b>About Me</b></h1>
-           
-            <div class="about-content">
-                <div class="image-box"></div>
-                <div class="information-box">
-                    <p class="about-myself"><span class="styl-bio">Hi! I'm Diksha Yele!</span> I'm a dedicated
-                        full-stack developer who
-                        enjoys turning ideas into reality
-                        through code with a passion for solving complex problems, bulding dynamic and mobile
-                        responsive web applications, and exploring the limitless potential of AI.</p>
-                    <p class="about-myself">I'm always learning and exploring new technologies to deliver dynamic,
-                        responsive, and
-                        high-performance websites.
-
-                    </p>
-
-
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- about section end -->
-
-        <!-- project section start -->
-        <section class="project" id="projectpage">
-            <h1><b> My Projects</b></h1>
-            <div class="project-container">
-                <div class="project-cards-one">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"
-                        alt="" height="280px" width="250px">
-
-                    <button> <a href="./html-cards.html">HTML projects</a></button>
-                </div>
-
-                <div class="project-cards-two">
-                    <img src="https://logos-world.net/wp-content/uploads/2024/12/CSS-Cascading-Style-Sheets-Logo-Old.png"
-                        alt="" height="280px" width="460px">
-
-                    <button><a href="./css-cards.html">CSS projects</a></button>
-                </div>
-                <div class="project-card-three">
-                    <img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Logo.png" alt=""
-                        height="280px" width="460px">
-
-                    <button><a href="./js-cards.html">JS projects</a></button>
-                </div>
-            </div>
-
-
-
-
-
-        </section>
-
-
-        <!-- project section end -->
-        <!-- contact section start -->
-        <section class="contact" id="contactpage">
-
-            <div class="contact-box">
-
-                <h1><b>Contact</b></h1>
-                <!-- </div> -->
-                <p class="cm">Feel free to reach out if you're looking for a developer, have a question, or just want to
-                    connect.
-                </p>
-                <div class="left-container">
-                    <div class="container-one">
-                        <h2>Gmail</h2>
-                        <img src="./email.png" alt="" height="40px" width="40px">
-                        <a href="" class="font-size">
-                            dikshayele668@gmail.com</a>
-                    </div>
-                    <div class="container-one">
-                        <h2>Phone</h2>
-                        <img src="./phoneicon.png" alt="" height="40px" width="40px">
-                        <a href="" class="font-size">
-                            +91 8999313303</a>
-                    </div>
-                    <div class="container-one">
-                        <h2>Location</h2>
-                        <img src="./location.png" alt="" height="40px" width="40px">
-                        <a href="" class="font-size">
-                            Gondia, Maharastra, India</a>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- contact section end -->
-    </main>
+            //output
+            document.getElementById("number-1").innerHTML=num1;
+            document.getElementById("number-2").innerHTML = num2;
+            document.getElementById("number-3").innerHTML = num3;
+            document.getElementById("display").innerHTML = avg;
+        }
+    </script>
 </body>
 
 </html>
