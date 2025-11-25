@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Product Discount Application</h1>
+    <h1 id="result"></h1>
+    <button onclick="functionOne()">click</button>
+    <script>
+        function functionOne() {
+            let originalprice = 2000;
+            let discount = 50;
+            
+
+            originalprice /= discount;
+            document.getElementById("result").innerHTML = originalprice;
+        }
+
+
+    </script>
+</body>
+
+</html>
