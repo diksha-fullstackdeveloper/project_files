@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container {
+            height: 60vh;
+            width: 50vw;
+            background-color: aliceblue;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: 2px 2px 2px gray;
+        }
+
+        .input-group {
+            height: 20%;
+            width: 90%;
+            background-color: white;
+            border-style: solid;
+            border-width: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+
+        }
+
+        input {
+            height: 40%;
+            width: 90%;
+            background-color: white;
+            font-size: 20px;
+
+        }
+
+        .heading {
+            height: 20%;
+            width: 90%;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+
+        }
+
+        .display {
+            height: 20%;
+            width: 90%;
+            background-color: rgb(114, 185, 188);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            height: 10%;
+            width: 90%;
+            background-color: rgb(87, 205, 28);
+            font-size: 24px;
+            border-radius: 10px;
+        }
+
+        label {
+            font-size: 27px;
+            font-weight: 600;
+            margin-right: 40px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Taicket Type Checker</h1>
+        </div>
+        <label>Enter Your Age:</label>
+        <div class="input-group">
+            <input type="number" id="input" placeholder="enter your age...">
+        </div>
+        <button onclick="checkType()">Check Ticket Type</button>
+        <div class="display">
+            <h1 id="result"></h1>
+        </div>
+    </div>
+</body>
+<script>
+    function checkType() {
+        let age = document.getElementById("input").value;
+        if (12 > age) {
+            document.getElementById("result").innerHTML = "Child ticket";
+        }
+        else {
+            document.getElementById("result").innerHTML = "Adult ticket";
+        }
+        document.getElementById("input").value = "";
+    }
+
+</script>
+
+</html>

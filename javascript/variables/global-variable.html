@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .main-container {
+            height: 70vh;
+            width: 60vw;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            box-shadow: 2px 2px 3px;
+            gap: 20px;
+        }
+
+        p {
+            font-size: 20px;
+
+        }
+
+        .display-area {
+            height: 20%;
+            width: 90%;
+            background-color: bisque;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+
+        }
+
+        .input-group {
+            height: 20%;
+            width: 90%;
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            gap: 20px;
+        }
+
+        input {
+            height: 30%;
+            width: 40%;
+            background-color: white;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        .button-group {
+            height: 20%;
+            width: 90%;
+            background-color: bisque;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        button {
+            height: 35%;
+            width: 40%;
+            background-color: rgb(65, 199, 53);
+            font-size: 20px;
+            border-radius: 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- box arrangement -->
+    <div class="main-container">
+        <div class="display-area">
+            <p>current balance</p>
+            <p id="display"></p>
+        </div>
+        <div class="input-group">
+            <input type="number" class="input" id="input1" placeholder="enter your input...">
+            <input type="number" class="input" id="input2" placeholder="enter your input...">
+        </div>
+        <div class="button-group">
+            <button onclick="deposite()">Add</button>
+            <button onclick="withdraw()">Sub</button>
+        </div>
+
+    </div>
+</body>
+<script>
+    // balance information
+    let balance = 0 ;
+    document.getElementById("display").innerHTML = balance;
+// withdraw function
+    function withdraw() {
+        let withdrawAmount = document.getElementById("input1").value;
+        balance = balance - Number(withdrawAmount);
+        document.getElementById("display").innerHTML = balance;
+        document.getElementById("input1").value = "";
+        alert("withdraw successfull");
+    }
+    // deposite function
+    function deposite() {
+        let depositeAmount = document.getElementById("input2").value;
+        balance = balance + Number(depositeAmount); 
+        document.getElementById("display").innerHTML = balance;
+        document.getElementById("input2").value = "";
+        alert("deposite successfull")
+    }
+
+
+</script>
+
+
+</html>

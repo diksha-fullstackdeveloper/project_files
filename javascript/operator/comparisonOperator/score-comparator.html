@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- style apply -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        /* tag selectors */
+        .container {
+            height: 60vh;
+            width: 50vw;
+            background-color:lightblue;
+            box-shadow: 1px 1px 1px gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            gap: 10px;
+        }
+
+        .heading {
+            height: 20%;
+            width: 90%;
+            background-color:aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+
+        }
+
+        .input-group {
+            height: 40%;
+            width: 90%;
+            background-color:aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 10px;
+
+        }
+        input{
+            height: 20%;
+            width: 90%;
+            background-color: white;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        label{
+            font-size: 24px;
+            font-weight: 600;
+        }
+        h1{
+            font-weight:700;
+            font-size: 40px;
+        }
+
+        button {
+            height: 10%;
+            width: 90%;
+            background-color:rgb(60, 180, 60);
+            font-size: 24px;
+            border-radius: 10px;
+
+
+
+        }
+
+        .display {
+            height: 20%;
+            width: 90%;
+            background-color:aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>score comprator</title>
+</head>
+
+<body>
+    <!-- body structure -->
+    <div class="container">
+        <div class="heading">
+            <h1>Score Comparator</h1>
+        </div>
+        <div class="input-group">
+            <label>First score:</label>
+            <input type="number" id="input-one" placeholder="Enter a number...">
+            <label>Second score:</label>
+            <input type="number" id="input-two" placeholder="Enter a number...">
+        </div>
+        <button onclick="compareScore()">Compare Score</button>
+        <div class="display">
+            <h1 id="result"></h1>
+        </div>
+    </div>
+</body>
+<!-- script apply -->
+<script>
+    function compareScore() {
+        let score1 = document.getElementById("input-one").value;
+        let score2 = document.getElementById("input-two").value;
+
+        if (score1 >= score2) {
+            document.getElementById("result").innerHTML = "first score is higher than second score"
+        }
+        else {
+            document.getElementById("result").innerHTML = "first score is smaller than second score"
+        }
+    }
+</script>
+
+</html>

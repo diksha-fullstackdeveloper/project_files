@@ -2,15 +2,80 @@
 <html lang="en">
 
 <head>
+    <style>
+        /* declaration */
+        body{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+        }
+        .container{
+            height: 70vh;
+            width: 50vw;
+            background-color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;        
+            gap: 20px;
+            border-style: solid;
+            border-width: 2px;
+        }
+        button{
+            height: 10%;
+            width: 80%;
+            background-color: greenyellow;
+            font-size: 20px;
+            font-weight: 600;
+
+        }
+        .box-group{
+            height: 25%;
+            width: 80%;
+            background-color: aliceblue;
+            border-style: solid;
+            border-width: 1px;
+            gap: 10px;
+           
+        }
+        .output{
+            height: 15%;
+            width: 80%;
+            background-color:aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-style: solid;
+            border-width: 1px;
+
+        }
+        h2{
+            margin-left: 160px;
+        }
+
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
 <body>
+    <div class="container">
     <h1>Product Discount Application</h1>
-    <h1 id="result"></h1>
-    <button onclick="functionOne()">click</button>
+    <div class="box-group">
+        <h2>Original price: $2000</h2>
+        
+        <h2>Discount: 50%</h2>
+    </div>
+
+   
+    <button onclick="functionOne()">Apply 50% Discount</button>
+     <h1 class="output" id="result"></h1>
+    </div>      
     <script>
         function functionOne() {
             let originalprice = 2000;
