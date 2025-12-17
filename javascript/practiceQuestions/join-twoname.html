@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* declaration */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* tag selectors */
+        .container {
+            height: 70vh;
+            width: 50%;
+            background-color: aliceblue;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            font-size: 30px;
+        }
+
+        input {
+            height: 10%;
+            width: 80%;
+            background-color: aliceblue;
+            border-radius: 10px;
+            font-size: 20px;
+
+        }
+
+        button {
+            height: 10%;
+            width: 80%;
+            background-color: rgb(41, 161, 41);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px;
+            font-size: 20px;
+        }
+
+        .button-one {
+            height: 10%;
+            width: 80%;
+            background-color: white;
+            border-radius: 10px;
+            color: black;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join name</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Name Combiner</h1>
+        <label>First Name:</label>
+        <input type="text" id="input-one" placeholder="Enter The Input...">
+        <label>Second Name:</label>
+        <input type="text" id="input-two" placeholder="Enter The Input...">
+
+        <button onclick="combineString()">Combine Name</button>
+        <button class="button-one">
+            <p>
+                <b class="display" id="display"></b>
+            </p>
+        </button>
+    </div>
+</body>
+<script>
+    function combineString() {
+        let firstname = document.getElementById("input-one").value;
+        let secondname = document.getElementById("input-two").value;
+
+        let fulname = firstname + " " + secondname;
+
+        document.getElementById("display").innerHTML = fulname;
+    }
+</script>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<
+html lang="en">
+
+<head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .container{
+            height: 40vh;
+            width: 50vw;
+            background-color: aliceblue;
+            box-shadow: 1px 1px 3px 1px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .display{
+            height: 20%;
+            width: 50%;
+            background-color: rgb(187, 117, 31);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Function</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1><b>Is Today Saturday or Sunday?</b></h1>
+
+        
+        <h1 class="display" id="display"></h1>
+
+    </div>
+    <script>
+        let day = new Date().getDay()
+
+        if ((inputDay = day == 0) || (day == 6)) {
+            document.getElementById("display").innerHTML = "today is weekend!"
+        }
+        else {
+            document.getElementById("display").innerHTML = "No, Today is weekday!"
+        }
+
+    </script>
+</body>
+
+
+</html>

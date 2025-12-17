@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- style apply  -->
+    <style>
+        /* declaration */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* tag selectors */
+        .container {
+            height: 50vh;
+            width: 50vw;
+            background-color: aliceblue;
+            box-shadow: 2px 2px 2px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        button {
+            height: 15%;
+            width: 80%;
+            background-color: rgb(80, 238, 23);
+            color: white;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        .display {
+            height: 15%;
+            width: 80%;
+            background-color: aliceblue;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun From JS</title>
+</head>
+
+<body>
+    <!-- structure  -->
+    <div class="container">
+        <h1><b>String Change In UPPERCASE</b></h1>
+        <button onclick="change()">Click</button>
+        <div class="display">
+            <h1 id="display"></h1>
+        </div>
+    </div>
+</body>
+<!-- script apply -->
+ <script>
+    function change(){
+    let string = "javascript is fun";
+    let result = string.slice(14,17);
+
+    document.getElementById("display").innerHTML = result;
+      }
+ </script>
+
+</html>
