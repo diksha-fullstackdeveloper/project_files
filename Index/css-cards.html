@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .products-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .content{
+            height: 15%;
+            width: 90%;
+            font-size: medium;
+        
+        }
+
+        .products-title {
+            height: 10%;
+            width: 100%;
+            padding-top: 10px;
+            gap: 30px;
+            background-color: #D3E0EA;
+        }
+
+        .products {
+            height: 100%;
+            width: 100%;
+            background-color:#D3E0EA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            height: 50%;
+            width: 30%;
+            background-color: white;
+            border-radius: 20px;
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 4px 4px 6px;
+
+        }
+
+        .image-card {
+            height: 70%;
+            width: 80%;
+            background-color: rgb(118, 94, 140);
+            border-radius: 15px;
+            background-image: url("https://i.sstatic.net/bl2Wp.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 3px 3px 5px;
+        }
+
+        .image-card-one {
+            height: 70%;
+            width: 80%;
+            border-radius: 15px;
+            background-color: white;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/007/126/110/small/golden-king-chess-standing-and-silver-king-chess-falling-on-chess-board-for-the-winner-with-competitor-and-business-strategy-concept-photo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+             box-shadow: 3px 3px 5px;
+        }
+
+        .image-card-two {
+            height: 70%;
+            width: 80%;
+            background-color: white;
+            border-radius: 15px;
+            background-image: url("https://miro.medium.com/1*c2u2hm4x_JmOqI7FUKhelQ.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+             box-shadow: 3px 3px 5px;
+        }
+
+        .image-card-three {
+            height: 70%;
+            width: 80%;
+            border-radius: 15px;
+            background-color: white;
+            background-image: url("https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg?cs=srgb&dl=pexels-pixabay-260024.jpg&fm=jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+             box-shadow: 3px 3px 5px;
+        }
+
+        .image-card-four {
+            height: 70%;
+            width: 80%;
+            border-radius: 15px;
+            background-color: white;
+            background-image: url("https://t3.ftcdn.net/jpg/14/39/24/12/360_F_1439241269_tpS7tKQ5BbsSeaW5JXd6Q0v7XmlGPaHV.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+             box-shadow: 3px 3px 5px;
+        }
+
+        button {
+            height: 10%;
+            width: 25%;
+            background-color: lightgray;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+       
+        a{
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Projects</title>
+</head>
+
+<body>
+    <main class="products-container">
+        <div class="products-title">
+            <h1 class="heading-one" > <B>My Completed Projects</B> </h1>
+        </div>
+        <div class="products">
+            <!-- card 1 -->
+            <div class="product-card">
+                <div class="image-card"></div>
+                <div class="content">
+                    <h1>Flex Layout</h1>
+                </div>
+                <button><a href="../Pages/CSS/Division-tag/layout-three.html">click</a></button>
+
+            </div>
+            <div class="product-card">
+                <div class="image-card-one"></div>
+                <div class="content">
+                    <h1>Chess By Flex</h1>
+                </div>
+                <button><a href="../Pages/CSS/Division-tag/chess-board.html">click</a></button>
+            </div>
+            <div class="product-card">
+                <div class="image-card-two"></div>
+                <div class="content">
+                    <h1> Grid Layout</h1>
+                </div>
+                <button><a href="../Pages/CSS/Display-grid/layout-seven.html">click</a></button>
+            </div>
+            <div class="product-card">
+                <div class="image-card-three"></div>
+                <div class="content">
+                    <h1>Chess By Grid</h1>
+                </div>
+                <button><a href="../Pages/CSS/Display-grid/grid-chess.html">click</a></button>
+            </div>
+            <div class="product-card">
+                <div class="image-card-four"></div>
+                <div class="content">
+                    <h1>Flag</h1>
+                </div>
+                <button><a href="../Pages/CSS/Division-tag/indian-flag.html">click</a></button>
+            </div>
+
+
+
+        </div>
+    </main>
+</body>
+
+</html>

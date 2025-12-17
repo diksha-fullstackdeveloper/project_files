@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* declaration */
+        body {
+            height: auto;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        /* tag selector */
+
+        /* header start */
+        header {
+            height: 10vh;
+            width: 100%;
+            background-color: #0C0950;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+            position: fixed;
+            box-shadow: 0.5px 0.5px 0.5px white;
+            /* z-index: 1; */
+        }
+
+        header h1 {
+            color: white;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            font-size: 20px;
+        }
+
+        li {
+            color: white;
+            height: 30px;
+            width: 90px;
+            cursor: pointer;
+            list-style: none;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        /* header media query start */
+        @media (min-width:400px) and (max-width: 900px) {
+
+            header {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+
+            ul {
+                width: 100%;
+                gap: 10px;
+                justify-content: center;
+                font-size: 16px;
+                flex-wrap: wrap;
+            }
+
+            li {
+                font-size: 18px;
+                width: auto;
+            }
+        }
+
+        /* header media query end */
+        /*header end  */
+
+        /* home section start */
+        /* section */
+        .home {
+            width: 100vw;
+            height: 100vh;
+            padding: 0px;
+            background-color: #213555;
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+            font-style: normal;
+            color: black;
+            font-size: x-large;
+        }
+
+        .home-content {
+            height: 90%;
+            width: 100%;
+            background-color: #213555;
+            margin-top: 10px;
+            margin-left: 80px;
+        }
+
+        .homepage-imagebox {
+            height: 55%;
+            width: 50%;
+            background-color: white;
+            border-radius: 30px;
+            margin-right: 160px;
+            background-image: url("https://images.stockcake.com/public/e/9/1/e911eae2-5b89-4aba-b739-7acd604172fe_large/coding-at-night-stockcake.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 50px;
+        }
+
+        .heading-one {
+            font-size: 50px;
+            color: white;
+            margin-left: 60px;
+            margin-top: 100px;
+            margin-bottom: -20px;
+
+        }
+
+        .second-heading {
+            font-size: 60px;
+            color: rgb(197, 157, 13);
+            margin-left: 60px;
+            margin-bottom: -5px;
+        }
+
+        p {
+            color: white;
+            margin-left: 60px;
+        }
+
+        .styl-bio {
+            font-size: 40px;
+            color: rgb(255, 145, 0);
+        }
+
+        .resume {
+            height: 8%;
+            width: 25%;
+            background-color: rgb(238, 255, 0);
+            border-radius: 10px;
+            border: none;
+            margin-left: 60px;
+        }
+
+        a {
+            font-size: 20px;
+        }
+
+        .resume:hover {
+            background-color: rgb(0, 208, 255);
+        }
+
+        /* home media query start */
+        @media(min-width:400px) and (max-width:900px) {
+
+
+            .home {
+                flex-direction: column;
+                text-align: center;
+                height: auto;
+                padding-top: 80px;
+            }
+
+            .home-content {
+                margin: 0;
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .heading-one,
+            .second-heading,
+            p {
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .homepage-imagebox {
+                width: 90%;
+                height: 250px;
+                margin: 20px auto;
+            }
+
+            button {
+                width: 40%;
+            }
+
+
+            .resume {
+                width: 30%;
+                margin-left: 0;
+            }
+        }
+
+        /* home media query end */
+        /* home section end */
+
+        /* about section start */
+        .about-me {
+            height: 80vh;
+            width: 100vw;
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .about-content {
+            height: 90%;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+        }
+
+        .image-box {
+            height: 80%;
+            width: 23%;
+            background-color: beige;
+            border-radius: 40px;
+            background-image: url("./ep.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.82);
+        }
+
+        .information-box {
+            height: 60%;
+            width: 60%;
+            background-color: white;
+            border-radius: 20px;
+            font-size: 25px;
+            font-style: normal;
+            color: black;
+            box-shadow: 2px 2px 3px;
+        }
+
+        .about-myself {
+            color: black;
+        }
+
+        /* about media query start */
+        @media(min-width:400px) and (max-width:900px) {
+
+
+            .about-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .image-box {
+                height: 100%;
+                width: 80%;
+                height: 280px;
+            }
+
+            .information-box {
+                width: 90%;
+                font-size: 20px;
+            }
+        }
+
+        /* about media query end */
+        /* about section end */
+
+
+        /* project section start */
+        .project {
+            height: 100vh;
+            width: 100vw;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+            gap: 10px;
+
+        }
+
+        .project-container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: white;
+            flex-direction: row;
+            gap: 40px;
+            padding: 30px;
+
+        }
+
+        .project-cards-one {
+            height: 70%;
+            width: 70%;
+            background-color: #F5F5F5;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: rgba(214, 231, 236, 0.649);
+            box-shadow: 4px 4px 6px rgba(128, 128, 128, 0.791);
+        }
+
+        .project-cards-two {
+            height: 70%;
+            width: 70%;
+            background-color: #F5F5F5;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: rgba(221, 231, 234, 0.677);
+            box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.809);
+
+        }
+
+        .project-card-three {
+            height: 70%;
+            width: 70%;
+            display: flex;
+            background-color: #F5F5F5;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: rgba(213, 228, 233, 0.749);
+            box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.809);
+
+        }
+
+
+        button {
+            height: 15%;
+            width: 50%;
+            background-color: rgb(235, 240, 243);
+            border-radius: 10px;
+            margin-left: 40px;
+            box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.75);
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* project media query start*/
+        @media(min-width:400px) and (max-width:900px) {
+
+
+            .project {
+                flex-direction: column;
+
+            }
+
+            .project-container {
+                flex-direction: column;
+
+
+            }
+
+            .project-cards-one {
+                flex-direction: column;
+            }
+
+            .project-cards-two {
+                flex-direction: column;
+            }
+
+            .project-card-three {
+                flex-direction: column;
+            }
+        }
+
+        /* project media query end*/
+        /* project section end */
+
+        /* contact section start */
+        .contact {
+            height: 80vh;
+            width: 100vw;
+            background-color: #FFF8F3;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+            padding: 20px;
+        }
+
+
+
+        .contact-box {
+            height: 100%;
+            width: 100%;
+            background-color: #F5F5F5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .left-container {
+            height: 70%;
+            width: 90%;
+            background-color: #FFF8F3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+        }
+
+        .container-one {
+            height: 50%;
+            width: 30%;
+            background-color: #FFF8F3;
+            box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.782);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .font-size {
+            font-size: x-large;
+        }
+
+        .cm {
+            margin-right: 190px;
+            color: black;
+            font-size: 30px;
+            font-weight: 200;
+        }
+
+
+        .click-button:hover {
+            color: lightblue;
+        }
+
+        /* contact media query start */
+        @media (min-width:400px) and (max-width:900px) {
+
+            .left-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .contact-box {
+                flex-direction: column;
+            }
+
+            .container-one {
+                width: 80%;
+                height: auto;
+                padding: 15px;
+            }
+
+            .cm {
+                margin-right: 0;
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+
+        /* contact media query end */
+        /* contact section end */
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="logo">
+            <h1><i><b>🌟Diksha Yele...</b></i></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#homepage"><b>Home</b></a></li>
+                <li><a href="#aboutpage"><b>About</b></a></li>
+                <li><a href="#projectpage"><b>Project</b></a></li>
+                <li><a href="#contactpage"><b>Contact</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header end -->
+    <main>
+        <!-- home section css start -->
+        <section class="home" id="homepage">
+            <div class="home container">
+                <div class="home-content">
+                    <h1 class="heading-one"><b>Hi, I'm </b></h1>
+                    <h1 class="second-heading"><b>DIKSHA YELE</b></h1>
+                    <p>A passionate full stack web developer and QA Engineer</p>
+                    <p>specializing inHTML, CSS, JavaScript, and Learing</p>
+                    <p>More To Develop.</p>
+
+                    <button class="resume"><a href="./javascript/js-exercise7.html">Open Resume</a></button>
+
+                </div>
+                <div class="homepage-imagebox"></div>
+            </div>
+        </section>
+        <!-- home section end -->
+        <!-- About section start -->
+        <section class="about-me" id="aboutpage">
+
+            <h1><b>About Me</b></h1>
+
+            <div class="about-content">
+                <div class="image-box"></div>
+                <div class="information-box">
+                    <p class="about-myself"><span class="styl-bio">Hi! I'm Diksha Yele!</span> I'm a dedicated
+                        full-stack developer who
+                        enjoys turning ideas into reality
+                        through code with a passion for solving complex problems, bulding dynamic and mobile
+                        responsive web applications, and exploring the limitless potential of AI.</p>
+                    <p class="about-myself">I'm always learning and exploring new technologies to deliver dynamic,
+                        responsive, and
+                        high-performance websites.
+
+                    </p>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- about section end -->
+
+        <!-- project section start -->
+
+        <div class="project" id="projectpage">
+            <h1><b> My Projects</b></h1>
+            <div class="project-container">
+                <div class="project-cards-one">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"
+                        alt="" height="280px" width="250px">
+
+                    <button> <a href="./html-cards.html">HTML projects</a></button>
+                </div>
+
+                <div class="project-cards-two">
+                    <img src="https://logos-world.net/wp-content/uploads/2024/12/CSS-Cascading-Style-Sheets-Logo-Old.png"
+                        alt="" height="280px" width="460px">
+
+                    <button><a href="./css-cards.html">CSS projects</a></button>
+                </div>
+                <div class="project-card-three">
+                    <img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Logo.png" alt=""
+                        height="280px" width="460px">
+
+                    <button><a href="./js-cards.html">JS projects</a></button>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+        <!-- project section end -->
+        <!-- contact section start -->
+        <section class="contact" id="contactpage">
+
+            <div class="contact-box">
+
+                <h1><b>Contact</b></h1>
+                <!-- </div> -->
+                <p class="cm">Feel free to reach out if you're looking for a developer, have a question, or just want to
+                    connect.
+                </p>
+                <div class="left-container">
+                    <div class="container-one">
+                        <h2>Gmail</h2>
+                        <img src="./email.png" alt="" height="40px" width="40px">
+                        <a href="" class="font-size">
+                            dikshayele668@gmail.com</a>
+                    </div>
+                    <div class="container-one">
+                        <h2>Phone</h2>
+                        <img src="./phoneicon.png" alt="" height="40px" width="40px">
+                        <a href="" class="font-size">
+                            +91 8999313303</a>
+                    </div>
+                    <div class="container-one">
+                        <h2>Location</h2>
+                        <img src="./location.png" alt="" height="40px" width="40px">
+                        <a href="" class="font-size">
+                            Gondia, Maharastra, India</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- contact section end -->
+    </main>
+</body>
+
+</html>
