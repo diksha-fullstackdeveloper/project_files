@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- style tag -->
+    <style>
+        /* declaration */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        /* tag selectors */
+        .main-container {
+            height: 60vh;
+            width: 40vw;
+            background-color: aliceblue;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px gray;
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        input {
+            height: 10%;
+            width: 70%;
+            background-color: white;
+            border-radius: 10px;
+            font-size: 24px;
+            color: black;
+
+        }
+
+        button {
+            height: 10%;
+            width: 70%;
+            background-color: rgb(65, 108, 142);
+            border-radius: 10px;
+            font-size: 24px;
+            color: white;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- body structure -->
+<div class="main-container">
+    <h1>Multiplication Quiz</h1>
+     <h1 id="display"></h1>
+    <br>
+    <input type="number" id="input " placeholder="Enter The Number...">
+    <br>
+    <button onclick="checkAnswer()">CheckAnswer</button>
+    <br>
+    <button onclick="newQuestion()">NewQuestion</button>
+   
+    <h1 id="result"></h1>
+</div>
+</body>
+<!-- script tag -->
+<script>
+
+    //input
+    let num1 = Math.random() * 10;
+    let num2 = Math.random() * 10;
+
+    num1 = Math.floor(num1);
+    num2 = Math.floor(num2);
+    let a = num1 * num2;
+   document.getElementById("display").innerHTML = "what is" + num1 + "x" + num2 + "=?";
+
+
+    function checkAnswer() {
+      ans = document.getElementById("input").value;
+      let result = ans == a
+      document.getElementById("result").innerHTML = result;
+    }
+    function newQuestion(){
+        location.reload()
+    }
+</script>
+
+</html>

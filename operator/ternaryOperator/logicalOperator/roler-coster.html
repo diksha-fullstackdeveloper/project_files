@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- apply style -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        /* tag selectors */
+        .container {
+            height: 90vh;
+            width: 50vw;
+            background-color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 1px 1px 6px 1px gray;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .requirment{
+            height: 30%;
+            width: 90%;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+
+        .input-group {
+            height: 30%;
+            width: 90%;
+            background-color:white;
+            display: flex;
+            justify-content: center;
+            align-items:start;
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 10px;
+        }
+        input{
+            height: 30%;
+            width: 100%;
+            background-color:rgb(175, 217, 215);
+            border-radius: 10px;
+            font-size: 24px;
+
+        }
+        .requirement{
+            height: 30%;
+            width: 90%;
+            background-color: aliceblue;
+        }
+        h1{
+            font-size: 40px;
+        }
+        label{
+            font-size: 22px;
+            font-weight:600;
+        }
+
+       
+        button{
+            height: 10%;
+            width: 80%;
+            background-color: rgb(76, 201, 76);
+            border-radius: 10px;
+            font-size: 20px;
+            color: white;
+
+        }
+        .display-result{
+            height: 10%;
+            width: 90%;
+            background-color:aliceblue;
+            border-radius: 10px;
+            color: rgb(24, 167, 45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roler coistre ride</title>
+</head>
+<body>
+   <div class="container">
+        <h1><b>Roller Coster Ride Checker</b></h1>
+        <div class="requirment">
+            <h2>Requirments to ride:</h2>
+            <ul>
+                <li>At least 12 years old</li>
+                <li>At least 140cm tall</li>
+            </ul>
+        </div>
+        <div class="input-group">
+            <label>Your Age(years):</label>
+            <input type="text" name="" id="Age">
+            <label>Your Height(cm):</label>
+            <input type="number" id="Height">
+        </div>
+        <button onclick="checkHeight()">Check Eligibility</button>
+
+        <div class="display-result">
+            <h1 id="display"></h1>
+        </div>
+    </div>
+    <script>
+        function checkHeight(){
+         const minAge = 12;
+         const minHeight = 140;
+         
+         let inputAge = Number(document.getElementById("Age").value) ;
+         let inputHeight = document.getElementById("Height").value;
+
+         if((inputAge >= minAge) && (inputHeight >= minHeight)){
+            document.getElementById("display").innerHTML = "You can ride the roller coster!"
+         }
+         else{
+            document.getElementById("display").innerHTML = "You do not ride the roller coster!"
+         }
+
+
+           
+        }
+    </script>
+</body>
+</html>

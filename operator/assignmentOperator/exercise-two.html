@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- style tag -->
+    <style>
+        /* declaration */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* tag selectors */
+        .container {
+            height: 60vh;
+            width: 40vw;
+            background-color: lightsteelblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px;
+        }
+
+        input {
+            height: 10%;
+            width: 80%;
+            background-color: lightcyan;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px;
+            font-size: 20px;
+        }
+
+        
+
+        button {
+            height: 10%;
+            width: 50%;
+            background-color:rgb(32, 159, 159);
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .button-one {
+            height: 15%;
+            width: 80%;
+            background-color:rgb(49, 215, 79);
+            border-radius: 10px;
+            display: none;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment operator</title>
+</head>
+
+<body>
+    <!-- body structure -->
+    <div class="container">
+        <h1>Students Marks Calculator</h1>
+        <br>
+        <input type="text" id="input-one" placeholder="enter the math marks...">
+       <br>
+       <input type="text" id="input-two" placeholder="add the science marks...">
+
+        <button onclick="addMarks()">Add Science Marks</button>
+        <button class="button-one" id="button-one">After adding science marks:Total =75</button>
+    </div>
+    <!-- script tag -->
+    <script>
+        function addMarks() {
+            let math = 40; 
+            let science = 35;
+            math += science;
+
+            
+            document.getElementById("button-one").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

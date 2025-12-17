@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- style tag -->
+    <style>
+        /* declaration */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* tag selectors */
+        .container{
+            height: 60vh;
+            width: 60vw;
+            background-color: aliceblue;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 1px 2px 2px;
+        }
+        .box{
+            height: 30%;
+            width: 80%;
+            background-color: rgb(183, 196, 209);
+            font-size: 15px;
+            border-radius: 10px;
+            
+        }
+        button{
+            height: 10%;
+            width: 80%;
+            background-color: greenyellow;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        .output{
+            height: 14%;
+            width:80%;
+            background-color: rgb(126, 230, 230);
+            border-radius: 10px;
+            font-size: 20px;
+            box-shadow: 1px 1px 1px;
+            }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+         <h1>Employee Salery Deduction</h1>
+         <br>
+         <div class="box">
+            <h2>Original salary:$5000</h2>
+            <h2>deductionamount:$500</h2>
+         </div>
+        <h2 id="output" class="output"></h2>
+        <button onclick="originalSalary()">click</button>
+    </div>
+    <script>
+        function originalSalary() {
+            let originalsalary = 5000;
+            let deductionamount = 500;
+            originalsalary -= deductionamount
+            document.getElementById("output").innerHTML = originalsalary;
+
+        }
+
+    </script>
+</body>
+
+</html>

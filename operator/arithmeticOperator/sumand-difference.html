@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- style tag -->
+    <style>
+        /*    declaration*/
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* tag selectors */
+        .main-container {
+            height: 80vh;
+            width: 50vw;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 1px 1px 3px 0.5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input {
+            height: 17%;
+            width: 90%;
+            background-color: white;
+            border-radius: 10px;
+            font-size: 20px;
+
+        }
+
+        button {
+            height: 18%;
+            width: 90%;
+            background-color: rgb(42, 169, 174);
+            border-radius: 10px;
+            font-size: 24px;
+            color: white;
+        }
+
+
+        label {
+            font-size: 24px;
+            color: black;
+
+        }
+
+        p {
+            height: 18%;
+            width: 90%;
+            background-color: white;
+            box-shadow: 1px 1px 1px gray;
+            border-radius: 10px;
+            font-size: 24px;
+
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- body structure -->
+    <div class="main-container">
+        <h1>Sum And Difference Calculator</h1>
+        <label>First Number</label>
+        <input type="number" id="input-one" placeholder="enter the value...">
+        <label>Second Number</label>
+        <input type="number" id="input-two" placeholder="enter the value...">
+
+        <button onclick="functionOne()">click</button>
+        <p>Sum: <b id="num1"></b> <b id="num2"></b> is <b id="output"></b></p>
+        <p>Difference: <b id="Sum"></b> <b id="difference"></b> is <b id="display"></b></p>
+    </div>
+
+
+
+    <script>l;
+        // function call
+        function functionOne() {
+            //input 
+            let num1 = document.getElementById("input-one").value;
+            let num2 = document.getElementById("input-two").value;
+
+            //process
+            let sum = Number(num1) + Number(num2);
+            let difference = Number(num1) - Number(num2);
+
+            //output
+            document.getElementById("output").innerHTML = sum;
+            document.getElementById("display").innerHTML = difference;
+        }
+    </script>
+</body>
+
+</html>
