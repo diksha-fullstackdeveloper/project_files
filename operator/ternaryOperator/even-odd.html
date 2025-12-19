@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
-    <head>
-         <style>
+<html lang="en">
+
+<head>
+    <style>
         /* declaration */
         body {
             margin: 0;
@@ -56,25 +57,28 @@
             font-size: 24px;
         }
     </style>
-        <title>control statement</title>
-    </head>
-    <body>
-         <div class="container">
-        <h1>Vowel Checker</h1>
-        <input type="text" id="input">
-        <button onclick="checkFunction()">Check</button>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even or odd checker</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Even Odd Checker</h1>
+        <input type="number" id="input">
+        <button onclick="checkNum()">Check</button>
         <div class="display">
             <p id="result"></p>
         </div>
     </div>
-        <script>
-            function checkFunction(){
-
-                 let c = document.getElementById("input")
-            let result = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')? "is vowel":"is consonent"
+    <script>
+        function checkNum() {
+            let number = document.getElementById("input").value;
+            let result = (number % 2 == 0) ? "number is even" : "number is odd";
             document.getElementById("result").innerHTML = result;
-            }
-           
-        </script>
-    </body>
+        }
+
+    </script>
+</body>
+
 </html>

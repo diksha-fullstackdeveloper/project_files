@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
-    <head>
-         <style>
+<html lang="en">
+
+<head>
+    <style>
         /* declaration */
         body {
             margin: 0;
@@ -37,44 +38,49 @@
         button {
             height: 15%;
             width: 80%;
-            background-color:rgb(60, 166, 193);
+            background-color: rgb(60, 166, 193);
             color: white;
             border-radius: 5px;
             font-size: 20px;
         }
-        .display{
+
+        .display {
             height: 10%;
             width: 80%;
-            background-color:white;
+            background-color: white;
             border-style: dotted;
-            display: flex;
+            display:flex;
             justify-content: center;
             align-items: center;
-            
+
         }
         p{
             font-size: 24px;
         }
     </style>
-        <title>control statement</title>
-    </head>
-    <body>
-         <div class="container">
-        <h1>Vowel Checker</h1>
-        <input type="text" id="input">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number positive or negative</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Positive or Negative Checker</h1>
+        <input type="number" id="input">
         <button onclick="checkFunction()">Check</button>
         <div class="display">
             <p id="result"></p>
         </div>
     </div>
-        <script>
-            function checkFunction(){
+    <script>
+        function checkFunction() {
+            let number = document.getElementById("input").value;
 
-                 let c = document.getElementById("input")
-            let result = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')? "is vowel":"is consonent"
+            let result = (number >= 0) ? " number is positive" : " number is negative"
             document.getElementById("result").innerHTML = result;
-            }
-           
-        </script>
-    </body>
+        }
+
+    </script>
+</body>
+
 </html>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
-    <head>
-         <style>
+<html lang="en">
+
+<head>
+    <style>
         /* declaration */
         body {
             margin: 0;
@@ -37,44 +38,53 @@
         button {
             height: 15%;
             width: 80%;
-            background-color:rgb(60, 166, 193);
+            background-color: rgb(60, 166, 193);
             color: white;
             border-radius: 5px;
             font-size: 20px;
         }
-        .display{
+
+        .display {
             height: 10%;
             width: 80%;
-            background-color:white;
+            background-color: white;
             border-style: dotted;
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
         }
-        p{
+
+        p {
             font-size: 24px;
         }
     </style>
-        <title>control statement</title>
-    </head>
-    <body>
-         <div class="container">
-        <h1>Vowel Checker</h1>
-        <input type="text" id="input">
-        <button onclick="checkFunction()">Check</button>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grade calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Grade Checker</h1>
+        <input type="number" id="input">
+        <button onclick="checkGrade()">Check</button>
         <div class="display">
             <p id="result"></p>
         </div>
     </div>
-        <script>
-            function checkFunction(){
-
-                 let c = document.getElementById("input")
-            let result = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')? "is vowel":"is consonent"
+    <script>
+        function checkGrade() {
+            let marks = document.getElementById("input")
+            let result = (marks >= 90) ? "A grade" :
+                (marks >= 75) ? "B grade" :
+                    (marks >= 50) ? "C grade" :
+                        (marks >= 35) ? "D grade" :
+                            "fail"
             document.getElementById("result").innerHTML = result;
-            }
-           
-        </script>
-    </body>
+        }
+
+    </script>
+</body>
+
 </html>
